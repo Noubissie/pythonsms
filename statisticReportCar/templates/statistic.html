@@ -1,0 +1,160 @@
+{# <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>statistic</title>
+    <style>
+        table{
+            border-collapse: collapse;}
+        td{
+            padding:20px;
+            border:solid;
+            border-collapse:collapse;
+
+            }
+            caption{
+                border:solid;
+                color:blue;
+                font-size:40px;
+    </style>
+</head>
+<body>
+<div style="text-align:center">
+    <table>
+        <caption>
+            {{clas}}
+        </caption>
+        <thead>
+        <tr>
+            <td>sequence</td>
+            <td>number of student</td>
+            <td>percentage pass</td>
+            <td>percentage Fail</td>
+            <td>
+                best student
+            </td>
+            <td>best student average</td>
+            <td>last student</td>
+            <td>last student average</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for  sequence,numberOfStudent, percentage_pass, percentageFail, bestStudent,bestStudentClass,
+        bestStudentAverage,lastStudent, lastStudentClass, lastStudentAverage in
+        test %}
+            <tr>
+                <td>{{sequence}}</td>
+                <td>{{numberOfStudent}}</td>
+                <td>{{percentage_pass}}%</td>
+                <td>{{percentageFail}}%</td>
+                <td>
+                    {{bestStudent}}<br>
+                    <span style="color:blue; "><big>{{bestStudentClass}}</big></span>
+
+                </td>
+                <td>{{bestStudentAverage}}</td>
+                <td>
+                    {{lastStudent}}<br>
+                    <span style="color:red;"><big>{{lastStudentClass}}</big></span>
+                </td>
+
+                <td>{{lastStudentAverage}}</td>
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+</div>
+
+
+</body>
+</html>
+#}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>statistic</title>
+    <style>
+        table{
+            border-collapse: collapse;}
+        td{
+            padding:20px;
+            border:solid;
+            border-collapse:collapse;
+
+            }
+            caption{
+                border:solid;
+                color:blue;
+                font-size:40px;
+    </style>
+</head>
+<body>
+<div style="text-align:center">
+    <table>
+        <caption>
+            {{clas}}
+        </caption>
+        <thead>
+        <tr>
+            <td>sequence</td>
+            <td>number of student</td>
+            <td>percentage pass</td>
+            <td>percentage Fail</td>
+            <td>
+                best student
+            </td>
+            <td>best student average</td>
+            <td>last student</td>
+            <td>last student average</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for  sequence,numberOfStudent, percentage_pass, percentageFail, bestStudent,
+        bestStudentAverage,lastStudent, lastStudentAverage in
+        test %}
+            <tr>
+                <td>{{sequence}}</td>
+                <td>{{numberOfStudent}}</td>
+                <td>{{percentage_pass}}%</td>
+                <td>{{percentageFail}}%</td>
+                {% if bestStudentAverage<10 %}
+                    <td style="color:red;">
+                        {{bestStudent}}
+
+                    </td>
+                    <td style="color:red;">{{bestStudentAverage}}</td>
+                {% else %}
+                    <td style="color:blue;">
+                        {{bestStudent}}
+
+                    </td>
+                    <td style="color:blue;">{{bestStudentAverage}}</td>
+                {% endif %}
+                {% if lastStudentAverage<10 %}
+                    <td style="color:red;">
+                        {{lastStudent}}
+
+                    </td>
+                    <td style="color:red;">{{lastStudentAverage}}</td>
+                {% else %}
+                    <td style="color:blue;">
+                        {{lastStudent}}
+
+                    </td>
+                    <td style="color:blue;">{{lastStudentAverage}}</td>
+                {% endif %}
+            </tr>
+        </tbody>
+        {% endfor %}
+    </table>
+</div>
+
+
+</body>
+</html>

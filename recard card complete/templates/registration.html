@@ -1,0 +1,110 @@
+{% extends 'administrator.html' %}
+
+
+{% block head %}
+
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static',filename='registration.css')}}">
+{% endblock %}
+
+   {% block title %}
+        <title>Class/classe</title>
+    {% endblock %}
+{% block result %}
+<table style="background-color:rgb(50,50,50); width:100%; color: white;margin: 2% 0% 2% 0% ">
+<tr>
+    <td>Welcome: Noble Sir/Madam</td>
+</tr>
+</table>
+{% endblock %}
+{% block form %}
+{% endblock %}
+
+{% block content %}
+
+
+    <form action="/database_registration" method="post">
+
+        <table style="text-align: left" class="root">
+            <tr><td id="user_exist" style="color:#ff136b; display: {{ display }};" colspan="2">user exist check name</td></tr>
+                <tr style="text-align: center;">
+                    <td class="legend" colspan="2">REGISTRATION</td>
+                </tr>
+
+                <tr>
+                    <td class="alignment">Teachers Name</td>
+                    <td><input type="text"  name="teacher_name" required  id="teacher_name" class="registration_input" style="width: 95%"> </td><!--pattern="*/d"-->
+                </tr>
+
+                <tr>
+                    <td class="alignment">Section</td>
+                    <td>
+                        <select id="school_section" required style="width: 95%">
+                            <option></option>
+                            <option>Anglophone Section</option>
+                            <option>Francophone Section</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+            <tr>
+                <td class="alignment">Number of classes thought</td>
+                <td>
+                    <input style="width: 80%" name='number_of_classes_thought' type="number" min="1" required pattern="*/d" id="number_of_class_thought" class="registration_input">
+                    <input type="button"  id='fall_down_input_subject_button'  value="&plus;">
+                </td>
+
+            </tr>
+        </table>
+            <table class="root" style="display:none;width: 100%" id ='tableset-prime-container'>
+
+
+            </table>
+            <table class="root">
+
+                <tr>
+                    <td style="text-align: center" colspan="2">Password</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><span id='inconsitentcy' style="color:red ;text-align: center; display:none">password inconsitentcy</span></td>
+                </tr>
+                <tr>
+                    <td class="alignment" >Password</td>
+                    <td>
+                        <input minlength="8" maxlength="400" title="minimum of 8 characters" style="width: 80%" type="password" required name="user_set_password" id="user_set_password" class="registration_input">
+                        <input  type="checkbox" name="pwd-visibility" id="password_set_visibility">
+{#                        <input  type="checkbox" name="pwd-visibility" >#}
+                    </td>
+                </tr>
+
+                <tr >
+                    <td class="alignment">confirm Password</td>
+                    <td>
+                        <input minlength="8" maxlength="400" title="minimum of 8 characters" style="width: 80%" type="password" required   name="user_confirm_password" id="user_confirm_password" class="registration_input">
+                        <input type="checkbox"  name="pwd-visibility" id="password_confirm_visibility">
+                    </td>
+                </tr>
+
+            </table>
+
+
+
+            <div style="text-align: center">
+                <input type="submit" id="confirm password" value="ok">
+            </div>
+
+    {% block script %}
+        <script type= "text/javascript" src= "../static/js/registration.js" ></script>
+    {% endblock script %}
+
+
+</form>
+{% endblock content %}
+
+
+
+
+
+<!-- </body>
+</html>  -->

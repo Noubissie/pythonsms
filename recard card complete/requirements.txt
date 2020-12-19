@@ -1,0 +1,7 @@
+flask
+sqlalchemy
+flask_whooshalchemy
+flaskwebgui
+flask_sqlalchemy
+pdfkit
+jinja2

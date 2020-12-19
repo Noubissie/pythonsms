@@ -1,0 +1,37 @@
+body{
+
+    align-items: center;
+    align-content: center;
+    background-image: url('image/b.jpg');
+    background-attachment: scroll;
+    background-repeat: unset;
+
+}
+.alignment{
+    width:40%;
+}
+#user_exist{
+    display:none;
+}
+.root{
+    background-color:darkslategray;top:50px; width:100% ;
+    text-align: left;
+    border-collapse: collapse;
+    border-left-color: rgb(228, 137, 152);
+    margin-left: auto; margin-right: auto;
+    margin-top: 1%; margin-bottom: 1%;
+
+}
+.registration_input{
+    margin: 3% 0% 5% 0%;
+    text-align: left;
+}
+
+
+.fs2{
+    position: relative;
+    padding: 5% 10%;
+    float: unset;
+    margin: 0% 8% 10% 10%;
+    /* margin: 10% ; */
+}

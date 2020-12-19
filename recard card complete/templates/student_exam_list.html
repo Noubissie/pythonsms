@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='student_exam_list.css')}}">
+    <title>form/classe</title>
+    <style>
+        thead{
+            background-color: green;
+        }
+        tr:nth-child(even){
+            background-color: rgba(60,60,60,0.4);
+        }
+    </style>
+</head>
+<body >
+<div class="admin_nav_div1">
+                <nav id="admin_navigation" class="admin_navigation" style="color:white">
+{#                    {% block result %}#}
+                    <table style="width: 100%; background-color: rgb(50,50,60); color:white">
+                        <tr>
+                            <td><button  onclick="goback()" style="float: left; width: 100%; font-size: 20px"><div id="backbotton">&laquo;&laquo;&laquo;</div></button> </td>
+                            <script>
+                                goback=() =>{
+                                    window.history.back()
+                                }
+                            </script>
+                            <td><a href="/" class='nav_anchor' rel="noopener noreferrer">Home &triangledown; </a></td>
+                            <td><a href="/about_us" class='nav_anchor' rel="noopener noreferrer">About Us &triangledown;</a></td>
+{#                            <td><a href="/result"class='nav_anchor' rel="noopener noreferrer">Result &triangledown;</a></td>#}
+                            <td><a href='/student' class='nav_anchor' rel="noopener noreferrer">Student &triangledown;</a></td>
+                            <td><a href='/registration' class='nav_anchor' rel="noopener noreferrer">Register &triangledown;</a></td>
+                            <td id="change-background-colors" class='nav_anchor'><input type="color" id="change-background-color"></td>
+                            <td><button  onclick="goforward()" style="float: right; width: 100%; font-size: 20px"><div id="forwardbotton">&raquo;&raquo;&raquo;</div></button> </td>
+                            <script>
+                                goforward=() =>{
+                                    window.history.forward()
+                                }
+                            </script>
+                        </tr>
+                    </table>
+{#                    {% endblock %}#}
+                </nav>
+            </div>
+<table style="width: 100%; text-align: left; border-collapse: collapse">
+<thead>
+    <tr style="color: blue; ">
+        <td >Student/Etudien</td>
+        <td style="width: 20%;">Average/Moyenne</td>
+        <td style=" width: 20%;">Position</td>
+    </tr>
+</thead>
+    {%  for i in student %}
+        <tr>
+            <td >
+                <a style="width: 100%; text-decoration: none" href="/student_result/{{i.student_name}}/{{i.student_class}}/{{sequence}}"><h2>{{i.student_name}}</h2></a>
+            </td>
+            <td style="width: 20%;"></td>
+            <td style=" width: 20%;"></td>
+
+
+        </tr>
+
+
+    {% endfor %}
+</table>
+</body>
+</html>

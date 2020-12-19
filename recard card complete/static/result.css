@@ -1,0 +1,20 @@
+.container_td{
+    border: solid;
+    color: white;
+    padding: 10%;
+
+
+}
+a{
+    text-decoration: none;
+    width: 100%;
+    ;
+}
+a > div{
+    background: white;
+}
+body{
+    border: solid black 5px;
+    background-color: rgba(50,10,100,0.5);
+    height: 100%;
+}

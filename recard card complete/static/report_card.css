@@ -1,0 +1,152 @@
+/*@import "print.css";*/
+
+
+.blue{
+    color:blue;
+    margin: 5px;:
+    border:solid black 10px;
+}
+.blue:nth-child(even){
+    background-color: blue;
+    color: white;
+    /*border: solid black 10px;*/
+}
+.fail{
+    color: red;
+}
+
+#report_container{
+     border: solid 5px blue;
+    height: 100%;
+    margin: 5% 1% 5% 1%;
+}
+#student_name_span{
+    border: solid blue;
+}
+#sequence{
+    text-align: center;
+    /*border: solid black;*/
+}
+#sh1{
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    color: white;background-color:blue;
+    /*width: fit-content;*/
+    border: solid blue;
+}
+#table-container{
+    border: solid blue;
+    width: 100%;
+
+    border-collapse: collapse;
+    ;
+}
+#tableaverage{
+    width: 100%;
+    border: blue 30px;
+    margin-top: 3%;
+}
+.rotate{
+    transform: rotateX(90deg);
+}
+#student_name{
+    border: solid blue;
+    width: 100%;
+    padding: 2%;
+    text-align: left;
+}
+
+@media print{
+    #print_button{
+    display: none;
+}
+    #backbotton{
+        display:none
+    }
+    #backbotton{
+        display: none;
+    }
+    #forwardbotton{
+        display: none;
+    }
+    .blue:nth-child(even){
+        background-color:blue ;
+        border: solid blue 2px;
+        color: blue;
+}
+    }
+
+.table2_in{
+    padding: 1%;
+    border: solid black;
+}
+.admin_nav_div1{
+    margin: 2% 0% 0% 0%;
+    padding:0% 0% 2% 0%;
+    color:white;
+    width: 100%;
+    background-color: rgba(50,50,50,1);
+}
+.nav_anchor{
+    border:solid black;
+    text-decoration: none;
+    color: white;
+
+}
+#backbotton:hover{
+    -webkit-animation-name: backbutton;
+    -moz-animation-name: backbutton;
+    -o-animation-name: backbutton;
+    animation-name: backbutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes backbutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+        transform: translateX(-100px);}
+}
+#forwardbotton:hover{
+    -webkit-animation-name: forwabutton;
+    -moz-animation-name: forwabutton;
+    -o-animation-name: forwabutton;
+    animation-name: forwabutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes forwabutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+        transform: translateX(100px);}
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    {% block head %}
+        <link rel="stylesheet" href="../static/administrator.css">
+    {% endblock %}
+    {% block title %}
+        <title>Administrator</title>
+    {% endblock %}
+
+</head>
+<body>
+    {% block form %}
+            <form action="/administration_database" method="post" enctype="multipart/form-data" id="form-id">
+    {% endblock %}
+    {% block head_nav %}
+        <div id="size_controller">
+            <div class="admin_nav_div1" >
+                <div id="div_fixed" style="position: fixed; left:0%;width: 100%; ">
+                    <nav id="admin_navigation" class="admin_navigation">
+    {#                    {% block result %}#}
+                        <table class="admin_table1" >
+                            <tr>
+                                {% block back %}
+                                    <td style="text-align:center;">
+
+                                        <button  onclick="goback()" style="float: left; background:green;font-size: 20px"><div id="backbotton">&laquo;&laquo;&laquo;</div></button>
+                                                        <script>
+                                                            goback=() =>{
+                                                                window.history.back()
+                                                            }
+                                                        </script>
+                                    </td>
+                                {% endblock %}
+                                <td><a href="/" class='nav_anchor' rel="noopener noreferrer">Home &triangledown; </a></td>
+                                <td><a href="/about_us" class='nav_anchor' rel="noopener noreferrer">About Us &triangledown;</a></td>
+                                <td><a href='/student' class='nav_anchor' rel="noopener noreferrer">Student &triangledown;</a></td>
+                                <td><a href='/registration' class='nav_anchor' rel="noopener noreferrer">Register &triangledown;</a></td>
+                                {% block forward %}
+                                    <td><button  onclick="goforward()" style="float: right; background-color: green; font-size: 20px"><div id="forwardbotton">&raquo;&raquo;&raquo;</div></button>
+                                        <script>
+                                            goforward=() =>{
+                                                window.history.forward()
+                                            }
+                                        </script>
+                                    </td>
+                                {% endblock %}
+                            </tr>
+                        </table>
+                    </nav>
+                </div>
+            </div>
+            <div>
+        {% endblock %}
+            <table >
+                <tr>
+                    <td id = "hole" style="height: 40px;"></td>
+
+                </tr>
+            </table>
+        </div>
+        <script>
+            div_hole = document.getElementById('div_fixed');
+            hole = document.getElementById('div_fixed');
+            hole.style.height = div_hole.style.height;
+
+        </script>
+            <div id="admin_title" class="admin_title"  >
+                <table class="admin_table2" >
+                    <tr id="admin-title_list" >
+                        <td >
+                            <h1><span class="n1">GOVERNMENT </span><span class="n2"> BILINGUAL HIGH SCHOOL </span>
+                                <span class="n3"> DZENG</span></h1>
+
+                            <h1><span class="n1">LYCEE</span><span class="n2">  BILINGUE DE </span>
+                                <span class="n3"> DZENG</span></h1>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="admin_nav_div1">
+                <nav class="admin_navigation">
+                    {% block result %}
+                    <table class="admin_table1">
+                        <tr>
+                            <td class='link-list'  id="cl1">log-in</td>
+                            <td ><a id="school_info" rel="noopener noreferrer" class='link-list' href="/student_info" >school information &blacktriangledown;</a></td>
+                            <td ><a id="staff_info" rel="noopener noreferrer" class='link-list' href="/staff_info">staff information &blacktriangledown;</a></td>
+                            <td ><a rel="noopener noreferrer" id="student_info" class='link-list' href="/student_info">student information &blacktriangledown;</a></td>
+                            <td ><a rel="noopener noreferrer" class='link-list' id="community-info" href="/community">community &blacktriangledown;</a></td>
+                            <td ><a rel="noopener noreferrer" id="themes_info" class='link-list' href="/themes_info">themes &blacktriangledown;</a></td>
+                            <td class='link-list' id="cl2">log-out</td>
+                            <td class="link-list" ><input style="width: 10px;" type="text" name="sequence_creation"></td>
+                        </tr>
+                    </table>
+                    {%  endblock %}
+                </nav>
+            </div>
+
+
+    {% block content %}
+            <div id="school_information">
+                <table  class="admin_table1">
+                    <tr>
+                        <td >
+                            School Section
+                        </td>
+                        <td>
+                            school year
+                        </td>
+                        <td>
+                            number of classes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select class="list-element" style="margin:0px; padding: 1px;" id="school-section" name="school_section">
+                                <option></option>
+                                <option class="opt1">Anglophone Section</option>
+                                <option class="opt1">Francophone Section</option>
+                            </select>
+                        </td>
+                        <td >
+                            <input class="list-element" style="margin: 0px 0px 0px 10px;" type="text" id="school_year" name="school_year">
+                        </td>
+                        <td >
+                            <input class="list-element" style="margin: 0px 0px 0px 10px; width: 50%;" type="number" id="number_of_class" name="number_of_class">
+                            <button id="class_and_subject_falldown"> &plus; </button>
+                        </td>
+                    </tr>
+                </table>
+                <div id="class_and_subject_thought">
+
+
+
+                </div>
+                <button type="submit" id="sub1">submit</button>
+            </div>
+
+
+              <div id="staff_information">
+                <table class="admin_table1">
+                    <tr>
+                        <td >Staff Section</td>
+                        <td >school year</td>
+                        <td>number of staff</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select class="list-element" style="margin:0px; padding: 1px;" id="staff_school_section" name="staff_section">
+                                <option></option>
+                                <option>Anglophone Section</option>
+                                <option>Francophone Section</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="list-element" style="margin: 0px 0px 0px 10px;"  type="text" id="staff_school_year" name="staff_school_year">
+                        </td>
+                        <td>
+                            <input class="list-element" style="margin: 0px 0px 0px 10px;width: 50%;" type="number" id="number_of_staffs" name="number_of_staffs">
+                        <button id="staff_and_rank_falldown"> &plus; </button>
+                        </td>
+
+                </table>
+                <div id="staff_and_rank">
+
+
+
+                </div>
+                <input type="submit" id='sub2' value="submit">
+            </div>
+
+
+            <div id="student_information">
+                <table class="admin_table1">
+                    <tr>
+                        <td>
+                            Student Section
+                        </td>
+                        <td>
+                            school year
+                        </td>
+                        <td>
+                            number of students
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <select class="list-element" style="margin:0px; padding: 1px;" id="student_school_section" name="student_section">
+                                <option></option>
+                                <option>Anglophone Section</option>
+                                <option>Francophone Section</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="list-element" style="margin: 0px 0px 0px 10px;" type="text" id="student_school_year" name="student_school_year">
+                        </td>
+                        <td>
+                            <input class="list-element" style="margin: 0px 0px 0px 10px; width: 50%;" type="number" id="number_of_students" name="number_of_students">
+                            <button id="student_info_falldown"> &plus; </button>
+                        </td>
+                    </tr>
+                </table>
+                <div id="student_info_div_block">
+
+
+
+                </div>
+                <button type="submit" id='sub3'>submit</button>
+            </div>
+
+            <div id="themes">
+                <label for="number-of-themes" class="label">number of themes<br>
+                    <input type="number" id="number-of-themes" name="number-of-themes">
+                </label>
+            </div>
+
+            <div id="community">
+                <label for="community_id" class="label">community<br>
+                    <textarea style="width: 100%; height: 1000px;" id="community_id" name="community_information"></textarea>
+                </label>
+            </div>
+    {#        <input type="submit" >#}
+    {% endblock %}
+        </div>
+    {% block endform %}
+        </form>
+    {% endblock %}
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    {% block script %}
+        <script rel="text/javascript" src="{{ url_for('static',filename='js/administrator.js') }}"></script>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,84 @@
+{% extends 'administrator.html' %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet"  href="{{ url_for('static', filename='login.css')}}">
+{% endblock %}
+
+   {% block title %}
+        <title>HOME</title>
+    {% endblock %}
+{% block form %}
+    {% endblock %}
+{% block head_nav %}
+    <div id="size_controller">
+            <div class="admin_nav_div1" >
+                <div id="div_fixed" style="position: fixed; left:0%;width: 100%; z-index: 1; ">
+                    <nav id="admin_navigation" class="admin_navigation">
+                        <table class="admin_table1" >
+                            <tr>
+                                <td><a href="/" class='nav_anchor' rel="noopener noreferrer">Home &triangledown; </a></td>
+                                <td><a href="/about_us" class='nav_anchor' rel="noopener noreferrer">About Us &triangledown;</a></td>
+                                <td><a href='/student' class='nav_anchor' rel="noopener noreferrer">Student &triangledown;</a></td>
+                                <td><a href='/login' class='nav_anchor' rel="noopener noreferrer" id="nav_anchor_login"><li>login</li></a></td>
+                                <td><a href='/registration' class='nav_anchor' rel="noopener noreferrer">Register &triangledown;</a></td>
+                            </tr>
+                        </table>
+                    </nav>
+                </div>
+            </div>
+    </div>
+
+{% endblock %}
+{% block result %}
+<table style="background-color:rgb(50,50,50); width:99%; color: white;margin: 2% 0% 2% 0% ">
+<tr>
+    <td>Welcome: Noble Sir/Madam</td>
+</tr>
+
+</table>
+
+
+
+
+    {% block content %}
+        {% endblock %}
+
+          <form action="/login" method="post">
+
+            <div class="login-container" id="login-container_id">
+                <table style="margin:auto; border: solid orange 20px;border-radius: 10%;background-color: skyblue">
+                    <tr>
+                        <td>
+                            <div style="text-align:center" class="login" id="login">
+                                <div style="text-align: center;">
+                                    <h id="login_title">LOGIN</h>
+                                </div>
+
+                                <div class="input_control">
+                                    <img alt="empty" id="user_image" src="{{ url_for('static',filename='image/3.jpg') }}"  width='200px'><br>
+                                    <h3 style="display:{{ display }}" id="login-error">invalide login information</h3>
+                                    <label class="label_login" for=user_name>user name
+                                        <input style="width:95%; font-size: 80%" required type="text" id="user_name" name="user_name">
+                                    </label><br>
+
+                                    <label class="label_login" for="user_password">Password
+                                        <input style="width:70%;font-size: 80%" required name="user_password" type="password" id="user_password" class="user_password">
+                                    <input style=';font-size: 80%;' type="button" name="pwd-visibility" id="password-visibility" value="&#X1F441;">
+                                        </label><br>
+                                    <button type="submit" style="font-size: 80%">ok</button>
+                                </div>
+
+                            </div>
+                       </td>
+                    </tr>
+                </table>
+            </div>
+
+        </form>
+
+    {% block endform %}
+    {% endblock %}
+    {% block script %}
+                <script type= "text/javascript" src= "{{ url_for('static',filename='js/base.js') }}" ></script>
+    {% endblock %}
+{% endblock %}

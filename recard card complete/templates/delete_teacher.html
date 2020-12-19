@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='delete_teacher.css') }}">
+    <title>DELETE</title>
+</head>
+<body>
+<form action="/delete_staff" method="post">
+
+    <label for="delete_teacher"> staff name
+    <input id="delete_teacher" name="staff_name">
+        </label>
+{#    <table style="width: 100%;border: outset">#}
+{#        <tr>#}
+{#            <td ><button style="width: 100%" id="fall_staff_button">staff</button></td>#}
+{#            <td ><button style="width: 100%" id="fall_student_button">student</button></td>#}
+{#        </tr>#}
+{#    </table>#}
+{##}
+{#    <table class="delete_tables" id="delete_staff">#}
+{#        <tr>#}
+{#            <td>number to staff delete</td>#}
+{#            <td><input style="width: 95%" type="number" min="1" id="number_of_staff_to_delete"></td>#}
+{#        </tr>#}
+{#        <tr>#}
+{#            <td><label for="delete_teacher"> staff name</label></td>#}
+{#            <td><input id="delete_teacher" name="staff_name"></td>#}
+{#        </tr>#}
+{#    </table>#}
+{#    <table class="delete_tables" id="delete_student">#}
+{#        <tr>#}
+{#            <td>number to student delete</td>#}
+{#            <td><input style="width: 95%" type="number" min="1" id="number_of_student_to_delete"> </td>#}
+{#            <td><label for="delete_a_student">student name</label></td>#}
+{#            <td><input id="delete_a_student" name="student_name"></td>#}
+{#        </tr>#}
+{#    </table>#}
+
+
+</form>
+<script src="{{ url_for('static', filename='js/delete_teacher.js') }}"></script>
+</body>
+</html>

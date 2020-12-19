@@ -1,0 +1,12 @@
+.table_about_us tr:nth-child(even){
+    background-color: green;
+    opacity: 0.5;
+}
+.table2_about_us tr:nth-child(even){
+    background-color:rgba(50,70,50,0.8);
+    border:solid;
+}
+.table_student1 tr:nth-child(even){
+    background-color: green;
+    opacity: 0.8;
+}

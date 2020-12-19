@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <xmlns="http://www.w3.org/1999/xhtml"></xmlns> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Report Card PLANOUS Web App for GBHS DZENG">
+    <meta name="application-name" content="GBHSDZENG">
+    <meta name="author" content="Noubissie Landry Placid">
+    <meta name="robots" content="noindex follow">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="blue">
+    <meta name="background-color" content="pink">
+    <meta name="short-name" content="GBHS DZENG">
+
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <link rel="icon" type="image/jpeg" sizes="32x32" href="{{url_for('static',filename='image/logo.jpeg')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static',filename='image/logo.jpeg')}}">
+
+	  <!-- Apple -->
+	  <meta name="apple-mobile-web-app-title" content="My Site">
+
+	  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+	  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="grey">
+
+	  <!-- Microsoft -->
+	  <meta name="msapplication-TileColor" content="grey">
+	  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+
+    <meta name="name" content="PLANOUS">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta property="fb:app_id" content="123456789">
+    <meta property="og:url" content="https://noubissie.pythonanywhere.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Report App GBHS DZENG">
+    <meta property="og:image" content="{{ url_for('static',filename='image/2.jpg') }}">
+    <meta property="og:description" content="Report Card Web App for GBHS DZENG">
+    <meta property="og:site_name" content="GBHS DZENG APP">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:author" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='fontawesome-free-5.11.2-web/css/all.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='fontawesome-free-5.11.2-web/css/v4-shims.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='fontawesome-free-5.11.2-web/css/fontawesome.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static', filename='base.css')}}">
+    <title>HOME</title>
+</head>
+
+<body>
+
+
+   {# <div id="english">
+ <div class="stickybar">
+            <div id="carouselExampleSlidesOnlyE" class=" carousel bg-light carousel-fade " data-interval="3000" data-ride="carousel">
+          <div class="carousel-inner ">
+            <div class="carousel-item active text-center display-5  ">
+                <i><strong>GOVERNMENT BILINGUAL HIGH SCHOOL DZENG 🇨🇲</strong></i>
+            </div>
+            <div class="carousel-item text-center display-5 " >
+                <i> <strong>LBD/GBHS</strong></i>
+            </div>
+            <div class="carousel-item text-center display-5" >
+                <i><strong>LYCEE BILINGUE DE DZENG 🇨🇲</strong></i>
+            </div>
+          </div>
+        </div>
+            <nav  class="navbar navbar-expand-lg navbar-dark  bg-info ">
+                <img src="{{url_for('static',filename='image/logo.jpeg')}} " class="image rounded-circle"/>
+                <a class="navbar-brand" href="/"><i>GBHS DZENG</i></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdownE" aria-controls="navbarNavDropdownf" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdownE">
+                <ul class="navbar-nav ">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="/"><span class="fa fa-home " style="color:blue">Home</span> </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/registration"><span class="fa fa-sign-in color-dark text-black" style="color:blue">Registration</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#"><span class="fa fa-question-circle" style="color:blue">Help</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink0" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:blue">
+                      Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink0">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+                <div>
+                      <ul class="nav justify-content-center ">
+                          <li class="nav-item">
+                              <a class="nav-link " href="#"><i class="fa fa-whatsapp" style="font-size:20px; color:green"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-facebook-official" style="font-size:20px;"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-twitter" style="font-size:20px"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-phone" style="font-size:20px"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa fa-youtube-play" style="font-size:20px;color:red"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="Email:" style="font-size:20px;color:red"></i></a>
+                          </li>
+
+                          <li class="nav-item dropdown bg-light pt-0 m-0">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:blue">
+                              EN
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                              <div id="change-to-english1">EN</div>
+                                <div class="dropdown-divider"></div>
+                              <div id="change-to-french1">FR</div>
+                            </div>
+                          </li>
+                        </ul>
+
+
+                </div>
+                 </nav>
+        </div>
+            {% block contentenglish %}
+            <div class="home-decor" class='home-decor1'>
+                <a href="/login1" class="home-decor">
+                        <span class="fa fa-edit">enter marks</span>
+                        <div>click here ohh to enter students marks</div>
+                        <div class="information">
+                            <div>step 1: click here</div>
+                            <div>step 2:Login with user name and password</div>
+                        </div>
+                </a>
+                <a href="/student" class="home-decor">
+                        <span class="fa fa-users">student report</span>
+                        <div>click here to see students results</div>
+                        <div class="information">
+                            <div>step 1:click here</div>
+                            <div>step 2:choose the evaluation</div>
+                            <div>step3: Choose the class</div>
+                            <div>voila see you result by checking you name</div>
+                            </div>
+                </a>
+                <a href="/about_us" class="home-decor">
+                        <span class="fa fa-user">about us</span>
+                        <div>click here to get to know more about our instituition</div>
+                </a>
+
+                <a href="{{url_for('static',filename='community.html')}}" class="home-decor">
+                        <span class="fa fa-group">Dzeng Community</span>
+                        <div>the dzeng community and culture heritage</div>
+                        <div class="information">
+                            Find out more about this wonderful locality,its culture and traditional heritage
+                            </div>
+                </a>
+                <a href="{{url_for('static',filename='news.html')}}" class="home-decor">
+                        <span class="fa fa-television">News</span>
+                        <div>Follow daily news in and out of the country</div>
+                        <div class="information">
+                            BBC,CNN,RFI,CANAL2,CRTV,NOVELAS,ETC
+                            </div>
+                </a>
+                <a href="{{url_for('static',filename='portfolio.html')}}"class="home-decor">
+                        <span class="fa fa-briefcase">portfolio</span>
+                        <div> About the software developement team</div>
+                        <div class="information">
+                            <div>Lead developer:Noubissie Placid</div>
+                            <div>FrontEnd Desine:Egbe Daniel</div>
+                            <div>Marketing::Dingbobga Desmond</div>
+                            </div>
+                </a>
+            </div>
+            {% endblock contentenglish %}
+    </div> #}
+
+    <div id="french" >
+        <div class="stickybar" style="z-index:3">
+            <div id="carouselExampleSlidesOnly1" class=" carousel bg-light carousel-fade " data-interval="3000" data-ride="carousel1">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active text-center display-5  ">
+                        <i><strong style="font-size:80%">GOVERNMENT BILINGUAL HIGH SCHOOL DZENG 🇨🇲</strong></i>
+                    </div>
+                    <div class="carousel-item text-center display-5 " >
+                        <i> <strong>LBD/GBHS🇨🇲</strong></i>
+                    </div>
+                    <div class="carousel-item text-center display-5" >
+                        <i><strong >LYCEE BILINGUE DE DZENG🇨🇲</strong></i>
+                    </div>
+                </div>
+            </div>
+            <nav  class="navbar navbar-expand-lg navbar-dark  bg-info ">
+                <img src="{{url_for('static',filename='image/logo.jpeg')}} " style="width:40px; height:40px" id="image" class="rounded-circle"/>
+                <a class="navbar-brand" href="/"><i>GBHS DZENG</i></a>
+
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdownf" aria-controls="navbarNavDropdownf" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                  </button>
+
+
+              <div class="collapse navbar-collapse" id="navbarNavDropdownf">
+                <ul class="navbar-nav ">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="/"><span class="fa fa-home " style="color:blue">Home</span> </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="/registration"><span class="fa fa-sign-in color-dark text-black" style="color:blue">Registration</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#"><span class="fa fa-question-circle" style="color:blue">Help</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:blue">
+                      Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+                <div>
+                      <ul class="nav justify-content-center ">
+                          <li class="nav-item">
+                              <a class="nav-link " href="#"><i class="fa fa-whatsapp" style="font-size:20px; color:green"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-facebook-official" style="font-size:20px;"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-twitter" style="font-size:20px"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-phone" style="font-size:20px"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="fa fa-youtube-play" style="font-size:20px;color:red"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link " href="#"><i class="Email:" style="font-size:20px;color:red"></i></a>
+                          </li>
+
+                     {#     <li class="nav-item dropdown pt-0 m-0">
+                            <a class="nav-link dropdown-toggle m-0 p-0 bg-light" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:blue">
+                              fr
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                              <div id="change-to-english">EN</div>
+                                <div class="dropdown-divider"></div>
+                              <div id="change-to-french">FR</div>
+                            </div>
+                          </li>
+                        </ul>
+                    #}
+
+                </div>
+                 </nav>
+            <div id="carouselExampleSlidesOnly2" class=" carousel bg-light carousel-fade "  data-interval="3000" data-ride="carousel1">
+                <div class="carousel-inner ">
+                    <div class="carousel-item active text-center display-5  ">
+                        <i><strong style="font-size:80%">GOVERNMENT BILINGUAL HIGH SCHOOL DZENG 🇨🇲</strong></i>
+                    </div>
+                    <div class="carousel-item text-center display-5 " >
+                        <i> <strong>LBD/GBHS🇨🇲</strong></i>
+                    </div>
+                    <div class="carousel-item text-center display-5" >
+                        <i><strong >LYCEE BILINGUE DE DZENG🇨🇲</strong></i>
+                    </div>
+                </div>
+            </div>
+             <nav  class="navbar  navbar-dark  bg-dark ">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#VerticalnavbarNavDropdownf" aria-controls="navbarNavDropdownf" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                  </button>
+              </nav>
+        </div>
+         <div  class="collapse navbar-collapse position-fixed  bg-dark" id="VerticalnavbarNavDropdownf">
+             <div id="innerVheight">
+                <div id="accordion">
+                  <div class="card">
+                    <div class="card-header bg-info" id="headingOne">
+                      <h7 class="mb-0">
+                        <div data-toggle="collapse" data-target="#student-in-school" aria-expanded="true" aria-controls="student-in-school">
+                          <span class="fa fa-users" style="color:blue"></span> Student
+                        </div>
+                      </h7>
+                    </div>
+
+                    <div id="student-in-school" class="collapse" aria-labelledby="student-in-school" data-parent="#accordion">
+                      <div class="card-body">
+
+                            {% for section in sections %}
+                                {% if school(section)|length != 0 %}
+
+                                    <div class="bg-info color-light p-2 mt-2 mr-2 mb-2 ml-0">{{section}}</div>
+
+
+                                         {% for clas in school(section) %}
+                                        <div class="dropdown-divider m-0 p-0"></div>
+                                                <div class="bg-secondary p-2 m-2" ><a href="#" class="text-light w-100" >{{clas.classs}}</a></div>
+
+                                         {% endfor %}
+
+
+                                {% endif %}
+                                <div class="dropdown-divider"></div>
+                            {% endfor %}
+
+
+                        </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header bg-info" id="headingTwo">
+                      <h7 class="mb-0">
+                        <div data-toggle="collapse" data-target="#staffs_v" aria-expanded="false" aria-controls="collapseTwo">
+                          <span class="fa fa-users " style="color:blue"></span> staffs
+                        </div>
+                      </h7>
+                    </div>
+                    <div id="staffs_v" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                         </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header bg-info" id="FillMarkhead">
+                      <h7 class="mb-0">
+                        <a href="/login1" class="remove_decore">
+                            <div data-toggle="collapse" data-target="#FillMark_v" aria-expanded="false" aria-controls="collapseThree">
+                                <span class="fa fa-book " style="color:blue"></span> Fill Marks
+                            </div>
+                        </a>
+                      </h7>
+                    </div>
+
+                  </div>
+                    <div class="card">
+                    <div class="card-header bg-info" id="studentreportHeader">
+                      <h7 class="mb-0">
+                        <div data-toggle="collapse" data-target="#studentreport_v" aria-expanded="false" aria-controls="studentreport_v">
+                          <span class="fa fa-file " style="color:blue"></span> Report Card
+                        </div>
+                      </h7>
+                    </div>
+
+                    <div id="studentreport_v" class="collapse" aria-labelledby="studentreport_v" data-parent="#accordion">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                    <div class="card">
+                    <div class="card-header bg-info" id="Marksheet_vheading">
+                      <h7 class="mb-0">
+                        <div data-toggle="collapse" data-target="#Marksheet_v" aria-expanded="false" aria-controls="collapseThree">
+                          <span class="fa fa-file " style="color:blue"></span> MarkSheet
+                        </div>
+                      </h7>
+                    </div>
+
+                    <div id="Marksheet_v" class="collapse" aria-labelledby="Marksheet_v" data-parent="#accordion">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                    <div class="card">
+                    <div class="card-header bg-info" id="statisticsHeading">
+                      <h7 class="mb-0">
+                        <div data-toggle="collapse" data-target="#statistics_v" aria-expanded="false" aria-controls="statistics_v">
+                          <span class="fa fa-pie-chart " style="color:blue"></span> Statistics
+                        </div>
+                      </h7>
+                    </div>
+
+                    <div id="statistics_v" class="collapse" aria-labelledby="statistics_v" data-parent="#accordion">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                    <div class="card">
+                    <div class="card-header bg-info" id="sylabusHeading">
+                      <h7 class="mb-0">
+                        <div data-toggle="collapse" data-target="#sylabus_v" aria-expanded="false" aria-controls="sylabus_v">
+                          <span class="fa fa-book " style="color:blue"></span> Syllabus
+                        </div>
+                      </h7>
+                    </div>
+
+                    <div id="sylabus_v" class="collapse" aria-labelledby="sylabus_v" data-parent="#accordion">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                    <div class="card">
+                    <div class="card-header bg-info" id="scheme">
+                      <h7 class="mb-0">
+                        <div data-toggle="collapse" data-target="#scheme_v" aria-expanded="false" aria-controls="scheme_v">
+                          <span class="fa fa-tasks " style="color:blue"></span> Scheme of Work
+                        </div>
+                      </h7>
+                    </div>
+
+                    <div id="scheme_v" class="collapse" aria-labelledby="scheme_v" data-parent="#accordion">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                    <div class="card">
+                    <div class="card-header bg-info" id="PedagogicProjectheading">
+                      <h7 class="mb-0">
+                        <div data-toggle="collapse" data-target="#PedagogicProject_v" aria-expanded="false" aria-controls="PedagogicProject_v">
+                          <span class="fa fa-tasks " style="color:blue"></span> Pedagogic Project
+                        </div>
+                      </h7>
+                    </div>
+
+                    <div id="PedagogicProject_v" class="collapse" aria-labelledby="PedagogicProject_v" data-parent="#accordion">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header bg-info" id="Effectiveservice_vheading">
+                      <h7 class="mb-0">
+                        <div data-toggle="collapse" data-target="#Effectiveservice_v" aria-expanded="false" aria-controls="Effectiveservice_v">
+                          <span class="fa fa-tasks " style="color:blue"></span> Effective service
+                        </div>
+                      </h7>
+                    </div>
+
+                    <div id="Effectiveservice_v" class="collapse" aria-labelledby="Effectiveservice_v" data-parent="#accordion">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+
+
+         </div>
+     </div>
+                {% block contentfrench %}
+
+    <div class="height100vh" id="frenchContainer">
+
+            <div id="carouselExampleIndicators" class="carousel" data-ride="carousel" data-interval="4000">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="reduce_height carousel-inner " >
+                        <div class="reduce_height carousel-item active w-100 h-50">
+                          <img class="reduce_height d-block w-100 " src="{{url_for('static', filename='image/3.jpg')}}" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark mb-4" >
+                                <h5>the Visit of the delegate</h5>
+                                <p>The Delegate visite to the GBHS Dzeng showing the principal and the delegate with members of staff</p>
+                            </div>
+                        </div>
+                        <div class="reduce_height carousel-item">
+                          <img class="reduce_height d-block w-100" src="{{url_for('static', filename='image/maths.jpeg')}}" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark mb-4" >
+                                <h5>the Visit of the delegate</h5>
+                                <p>The Delegate visite to the GBHS Dzeng showing the principal and the delegate with members of staff</p>
+                            </div>
+                        </div>
+                        <div class="reduce_height carousel-item">
+                          <img class="reduce_height d-block w-100" src="{{url_for('static', filename='image/Black-Lives-Matter.jpg')}}" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block bg-dark mb-4" >
+                                <h5>the Visit of the delegate</h5>
+                                <p>The Delegate visite to the GBHS Dzeng showing the principal and the delegate with members of staff</p>
+                            </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+            </div>
+
+
+
+
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+         {# <!--Controls-->
+          <div class="controls-top">
+            <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+            <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                class="fas fa-chevron-right"></i></a>
+          </div>
+          <!--/.Controls--> #}
+
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+            <li data-target="#multi-item-example" data-slide-to="1"></li>
+            <li data-target="#multi-item-example" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
+
+          <!--Slides-->
+          <div class="carousel-inner m-0 p-0 " role="listbox" >
+
+            <!--First slide-->
+            <div class="carousel-item active m-0 p-0 row">
+            <div class="row">
+                  <div class="col-md-4 col-lg-4">
+                    <div class="card mb-2">
+                      <img class="card-img-top"
+                        src="{{url_for('static',filename='image/b.jpg')}} "
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Gathering</h4>
+                        <p class="card-text">Visite of the delegate of Dzeng to Government Bilibgual High School Dzeng, Image of the delegate in the
+                            center principal to his right and staff members of this pristigous instituite.
+                          </p>
+                        <a class="btn btn-primary">Button</a>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                  <div class="col-md-4 col-lg-4">
+                    <div class="card mb-2">
+                      <img class="card-img-top" style="height:350px"
+                        src="{{url_for('static',filename='image/2.jpg')}}"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Welcome Speech</h4>
+                        <p class="card-text">Presentation speech to the delegate by one of the hor lauretes of GBHS Dzeng
+                          </p>
+                        <a class="btn btn-primary">Button</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-lg-4">
+                    <div class="card mb-2">
+                      <img class="card-img-top"
+                        src="{{url_for('static',filename='image/3.jpg')}}"
+                        alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">End of Year </h4>
+                        <p class="card-text">
+                          End of year good buy by students to</p>
+                        <a class="btn btn-primary">Button</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </div>
+            <!--/.First slide-->
+
+            <!--Second slide-->
+
+            <div class="carousel-item m-o p-0">
+             <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="{{url_for('static',filename='image/4.jpg')}}">
+                  <div class="card-body">
+                    <h4 class="card-title">Youth Day celebration</h4>
+                    <p class="card-text">click here to find out more on how we celebrate the Youth day in our Prectigous instituite
+                      </p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="{{url_for('static',filename='image/Black-Lives-Matter.jpg')}}" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">The Life of a black skin man matters in the say of our world let's join hands</p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="{{url_for('static',filename='image/covid19new.jpg')}}" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">new on covid 19</h4>
+                    <p class="card-text">All the trending new about the covid-19 "virus". Follow us.</p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+             </div>
+            </div>
+            <!--/.Second slide-->
+
+            <!--Third slide-->
+            <div class="carousel-item">
+             <div class="row">
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="{{url_for('static',filename='image/maths.jpeg')}}" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Maths and the world</h4>
+                    <p class="card-text">Modelling mathematical equations and statistical formulations
+                      card's content.</p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="{{url_for('static',filename='image/science.png')}}" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Kindom of Science</h4>
+                    <p class="card-text">Follow the latest trending in the world of science</p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-2">
+                  <img class="card-img-top"
+                    src="{{url_for('static',filename='image/reproduction1.jpg')}}" alt="Card image cap">
+                  <div class="card-body">
+                    <h4 class="card-title">Sexual </h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                      card's content.</p>
+                    <a class="btn btn-primary">Button</a>
+                  </div>
+                </div>
+              </div>
+             </div>
+            </div>
+            <!--/.Third slide-->
+
+          </div>
+          <!--/.Slides-->
+        </div>
+</div>
+    </div>
+<!--/.Carousel Wrapper-->
+                {% endblock contentfrench %}
+
+
+    {% block content %}
+
+
+        {% endblock content %}
+        <script rel="javascript" src="{{url_for('static',filename='js/base.js')}}"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

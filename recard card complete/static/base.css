@@ -1,0 +1,74 @@
+body{
+    filter:contrast(130%) brightness(100%) saturate(150%);
+    -webkit-background-size: cover;
+    background-repeat:no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    object-fit:cover;
+    margin:0px;
+    top: 0px;
+}
+.stickybar{
+    position : sticky;
+    top:0px;
+    z-index:2;
+}
+.image{
+    width:40px;
+    height:40px
+
+}
+#VerticalnavbarNavDropdownf{
+    z-index:1;
+
+    height:100vh;
+    width:300px;
+    overflow-wrap: break-word;
+    overflow:scroll;
+}
+.height100vh{
+    height:100vh;
+    overflow-wrap: break-word;
+    overflow:scroll;
+}
+#innerVheight{
+
+    height:90vh;
+    overflow-wrap: break-word;
+    overflow:scroll;
+}
+.center{
+    text-align:center
+}
+.remove_decore{
+    text-decoration: none;
+     list-style: none;
+     color:black;
+
+}
+#container{
+    z-index:0;
+}
+#carouselExampleIndicators{
+    border: solid outset;
+    z-index:0;
+
+
+ /*   height:30vh;*/
+    margin:0px;
+    padding:0px;
+}
+.carousel-inner img{
+
+}
+.reduce_height{
+    height:60vh;
+}
+.carousel-caption {
+    position: relative;
+    left: 0;
+    top:-14vh;
+    opacity:0.8;
+}
+/* 192.168.43.137  */

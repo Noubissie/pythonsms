@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin correction sheet</title>
+</head>
+<body>
+    <table style="border-collapse:collapse">
+        <tr>
+                <td style="border:solid; border-color:blue;font-size:10px; width:50px" colspan="10">classe</td>
+                <td style="border:solid; border-color:blue;font-size:10px; width:50px" colspan="10"><h3>{{clas}}</h3></td>
+            </tr>
+            <tr>
+                <td style="border:solid; border-color:blue;font-size:10px" colspan="10">evaluation</td>
+                <td style="border:solid; border-color:blue;font-size:10px" colspan="10"><h1>{{seq}}</h1></td>
+            </tr>
+    </table>
+    <form  action="/marksheet/{{clas}}/{{seq}}/{{coef}}" method="post" enctype="multipart/form-data">
+        <table style="border-collapse:collapse">
+            <thead>
+            <tr >
+                <td style="width:160px; border:solid; border-color:blue;">student name</td>
+                {% for subject in subjects %}
+                    <td style="border:solid; border-color:blue;font-size:10px">{{subject}}</td>
+                {% endfor %}
+            </tr>
+
+
+
+            </thead>
+
+
+            {% for student in students %}
+                <tr>
+                    <td style="border:solid; border-color:blue;" ><input step="0.01" type="text" value="{{student.student_name}}" name="{{student.student_name}}" readonly/></td>
+                    {% for j in range(subjects|length)%}
+
+                        {% if subjects[j].upper().strip() in spsd[student.student_name] %}
+                         {% for i in range(marks|length) %}
+
+                            {% if marks[i].student_name == student.student_name %}
+
+                                        {% if subjects[j].upper().strip() == marks[i].subject.upper().strip() %}
+                                            {# <td style="border:solid; border-color:blue;">{{marks[i].staff_name,marks[i].coefficient, marks[i].mark}}</td> #}
+                                            <td style="border:solid; border-color:blue;">
+                                                <input type="number" step="0.01"  value={{marks[i].mark}}
+                                                                                                name="{{student.student_name}}{{subjects[j]}}{{seq}}" />
+                                                {{marks[i].staff_name}}
+                                            </td>
+                                        {{break}}
+                                        {% endif %}
+
+                            {% endif %}
+                        {% endfor %}
+                    {% else %}
+                        <td style="border:solid; border-color:blue;"><input type="number" step="0.01" name="{{student.student_name+subjects[j]+seq}}" /> </td>
+                    {% endif %}
+
+                    {% endfor %}
+
+                </tr>
+            {% endfor %}
+
+        </table>
+          <button type="submit" >submit</button>
+    </form>
+</body>
+</html>

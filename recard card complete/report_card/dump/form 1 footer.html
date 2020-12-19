@@ -1,0 +1,3845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .blue{
+    color:blue;
+    margin: 5px;:
+    border:solid black 10px;
+}
+.blue:nth-child(even){
+    background-color: blue;
+    color: white;
+    /*border: solid black 10px;*/
+}
+.fail{
+    color: red;
+}
+
+#report_container{
+     border: solid 5px blue;
+    height: 100%;
+
+    margin: 100px 1% 5% 1%;
+}
+#student_name_span{
+    border: solid blue;
+}
+#sequence{
+    text-align: center;
+    /*border: solid black;*/
+}
+#sh1{
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    color: white;background-color:blue;
+    /*width: fit-content;*/
+    border: solid blue;
+}
+#table-container{
+    border: solid blue;
+    width: 100%;
+
+    border-collapse: collapse;
+    ;
+}
+#tableaverage{
+    width: 100%;
+    border: blue 30px;
+    margin-top: 3%;
+}
+.rotate{
+    transform: rotateX(90deg);
+}
+#student_name{
+    border: solid blue;
+    width: 100%;
+    padding: 2%;
+    text-align: left;
+}
+
+@media print{
+    #print_button{
+    display: none;
+}
+    #backbotton{
+        display:none
+    }
+    #backbotton{
+        display: none;
+    }
+    #forwardbotton{
+        display: none;
+    }
+    .blue:nth-child(even){
+        background-color:blue ;
+        border: solid blue 2px;
+        color: blue;
+}
+    }
+
+.table2_in{
+    padding: 1%;
+    border: solid black;
+}
+.admin_nav_div1{
+    margin: 2% 0% 0% 0%;
+    padding:0% 0% 2% 0%;
+    color:white;
+    width: 100%;
+    background-color: rgba(50,50,50,1);
+}
+.nav_anchor{
+    border:solid black;
+    text-decoration: none;
+    color: white;
+
+}
+#backbotton:hover{
+    -webkit-animation-name: backbutton;
+    -moz-animation-name: backbutton;
+    -o-animation-name: backbutton;
+    animation-name: backbutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes backbutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+        transform: translateX(-100px);}
+}
+#forwardbotton:hover{
+    -webkit-animation-name: forwabutton;
+    -moz-animation-name: forwabutton;
+    -o-animation-name: forwabutton;
+    animation-name: forwabutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes forwabutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+        transform: translateX(100px);}
+
+    </style>
+</head>
+<body style="margin:0px">
+    
+    <div id="report_container">
+            <table style="width: 100%; text-align: left; color: blue;"  >
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Name</td>
+                    <td class="table2_in">AFANA MAMA</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Annee Academic<br>Academic year</td>
+                    <td class="table2_in">2019/2020</td>
+                </tr>
+                <tr><td colspan="2" class="table2_in" style="width: 100%; text-align: center; background-color: blue;color: white">First term|Premiere tremestreEVALUATION OBSERVATION<br>OBSERVATIONS DU EVALUATION</td></tr>
+            </table>
+            <table style="width: 100%;margin:Opx;padding:0px;font-size:10px">
+                <tr style="width: 90%">
+                    <td class="table2_in" colspan="3">Discipline</td>
+                    <td class="table2_in" colspan="9">Work/Travail</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Retards/Punishment</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in" ><span style="margin:20px"></span></td>
+                    <td class="table2_in">Politesse<br>Politeness</td>
+                    <td class="table2_in" colspan="8">Appreciation<br>Appreciation</td>
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ/UNJ</td>
+                    <td class="table2_in" ></td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in">TB/EXCL</td>
+                    <td class="table2_in">B/VG</td>
+                    <td class="table2_in">AB/GOOD</td>
+                    <td class="table2_in">PASS/FAIR</td>
+                    <td class="table2_in">MED/AV</td>
+                    <td class="table2_in">INSU/INSUFF</td>
+                    <td class="table2_in">FAIB/WEAK</td>
+                    <td class="table2_in">TRES FAIB<br>V.WEAK</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Absences<br>en heures/in hours</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="2">Application</td>
+                    <td  colspan="8" style="text-align: left; border: solid black; ">
+                        An effort is needed in:<br>
+                        Un effort s'impose en:<br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ</td>
+                    <td class="table2_in"></td>
+                    <td  colspan="8" rowspan="5" style="text-align: left; border: solid black; text-decoration: none; vertical-align: baseline ">
+
+
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physics</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Chemistry</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Biology</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Mathematics</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Geography</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Literature</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Language</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; French</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Manual Labour</div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; History</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Computer Studies</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Citizenship Education</div>
+                            
+                        
+                    
+                        
+                    
+                
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Retenues/Punishments<br>en heures/in hours</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Avertissement<br>Serious Warnings</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Exclusion<br>Temp Suspension<br>en jours/days</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Motif</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <table style="width: 100%; text-align: center; border-collapse: collapse;">
+        <tr style="color: white; background-color: blue" >
+            <td class="table2_in" colspan="2">REMARK AND SIGNATURE OF CLASS MASTER<br>OBSERVATIONS ET VISA DU PROFESSEUR</td>
+        </tr>
+        <tr>
+            <td class="table2_in"  colspan="2"><textarea style="width: 100%; height: 100px;" ></textarea></td>
+        </tr>
+        <tr style="color: white; background: blue;" >
+            <td class="table2_in">REMARK AND SIGNATURE OF PARENT<br>OBSERVATIONS ET VISA DU PARENT</td>
+            <td class="table2_in">REMARK AND SIGNATURE OF DISCIPLINE MASTER/PRINCIPAL <br>OBSERVATION ET VISA DU CHEF D'ETABLISSEMENT</td>
+        </tr>
+        <tr style="height: 200px;">
+            <td class="table2_in" style="height: 50px;"></td>
+            <td class="table2_in" style="height: 50px; text-align: left;">
+                <div style="border-bottom: solid black;margin-bottom:2%;"></div>
+                <div style="width: 50%; border-bottom: solid black;">DZENG,le</div>
+            </td>
+        </tr>
+
+    </table>
+    </div>
+    <p style="page-break-after: always;"></p>
+    
+    <div id="report_container">
+            <table style="width: 100%; text-align: left; color: blue;"  >
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Name</td>
+                    <td class="table2_in">AKOULA CLAUDE NICOLA</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Annee Academic<br>Academic year</td>
+                    <td class="table2_in">2019/2020</td>
+                </tr>
+                <tr><td colspan="2" class="table2_in" style="width: 100%; text-align: center; background-color: blue;color: white">First term|Premiere tremestreEVALUATION OBSERVATION<br>OBSERVATIONS DU EVALUATION</td></tr>
+            </table>
+            <table style="width: 100%;margin:Opx;padding:0px;font-size:10px">
+                <tr style="width: 90%">
+                    <td class="table2_in" colspan="3">Discipline</td>
+                    <td class="table2_in" colspan="9">Work/Travail</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Retards/Punishment</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in" ><span style="margin:20px"></span></td>
+                    <td class="table2_in">Politesse<br>Politeness</td>
+                    <td class="table2_in" colspan="8">Appreciation<br>Appreciation</td>
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ/UNJ</td>
+                    <td class="table2_in" ></td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in">TB/EXCL</td>
+                    <td class="table2_in">B/VG</td>
+                    <td class="table2_in">AB/GOOD</td>
+                    <td class="table2_in">PASS/FAIR</td>
+                    <td class="table2_in">MED/AV</td>
+                    <td class="table2_in">INSU/INSUFF</td>
+                    <td class="table2_in">FAIB/WEAK</td>
+                    <td class="table2_in">TRES FAIB<br>V.WEAK</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Absences<br>en heures/in hours</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="2">Application</td>
+                    <td  colspan="8" style="text-align: left; border: solid black; ">
+                        An effort is needed in:<br>
+                        Un effort s'impose en:<br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ</td>
+                    <td class="table2_in"></td>
+                    <td  colspan="8" rowspan="5" style="text-align: left; border: solid black; text-decoration: none; vertical-align: baseline ">
+
+
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physics</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Chemistry</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Biology</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Geography</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Literature</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Language</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; French</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physical Education</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; History</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Computer Studies</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Citizenship Education</div>
+                            
+                        
+                    
+                
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Retenues/Punishments<br>en heures/in hours</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Avertissement<br>Serious Warnings</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Exclusion<br>Temp Suspension<br>en jours/days</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Motif</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <table style="width: 100%; text-align: center; border-collapse: collapse;">
+        <tr style="color: white; background-color: blue" >
+            <td class="table2_in" colspan="2">REMARK AND SIGNATURE OF CLASS MASTER<br>OBSERVATIONS ET VISA DU PROFESSEUR</td>
+        </tr>
+        <tr>
+            <td class="table2_in"  colspan="2"><textarea style="width: 100%; height: 100px;" ></textarea></td>
+        </tr>
+        <tr style="color: white; background: blue;" >
+            <td class="table2_in">REMARK AND SIGNATURE OF PARENT<br>OBSERVATIONS ET VISA DU PARENT</td>
+            <td class="table2_in">REMARK AND SIGNATURE OF DISCIPLINE MASTER/PRINCIPAL <br>OBSERVATION ET VISA DU CHEF D'ETABLISSEMENT</td>
+        </tr>
+        <tr style="height: 200px;">
+            <td class="table2_in" style="height: 50px;"></td>
+            <td class="table2_in" style="height: 50px; text-align: left;">
+                <div style="border-bottom: solid black;margin-bottom:2%;"></div>
+                <div style="width: 50%; border-bottom: solid black;">DZENG,le</div>
+            </td>
+        </tr>
+
+    </table>
+    </div>
+    <p style="page-break-after: always;"></p>
+    
+    <div id="report_container">
+            <table style="width: 100%; text-align: left; color: blue;"  >
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Name</td>
+                    <td class="table2_in">BIKIE OWONA</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Annee Academic<br>Academic year</td>
+                    <td class="table2_in">2019/2020</td>
+                </tr>
+                <tr><td colspan="2" class="table2_in" style="width: 100%; text-align: center; background-color: blue;color: white">First term|Premiere tremestreEVALUATION OBSERVATION<br>OBSERVATIONS DU EVALUATION</td></tr>
+            </table>
+            <table style="width: 100%;margin:Opx;padding:0px;font-size:10px">
+                <tr style="width: 90%">
+                    <td class="table2_in" colspan="3">Discipline</td>
+                    <td class="table2_in" colspan="9">Work/Travail</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Retards/Punishment</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in" ><span style="margin:20px"></span></td>
+                    <td class="table2_in">Politesse<br>Politeness</td>
+                    <td class="table2_in" colspan="8">Appreciation<br>Appreciation</td>
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ/UNJ</td>
+                    <td class="table2_in" ></td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in">TB/EXCL</td>
+                    <td class="table2_in">B/VG</td>
+                    <td class="table2_in">AB/GOOD</td>
+                    <td class="table2_in">PASS/FAIR</td>
+                    <td class="table2_in">MED/AV</td>
+                    <td class="table2_in">INSU/INSUFF</td>
+                    <td class="table2_in">FAIB/WEAK</td>
+                    <td class="table2_in">TRES FAIB<br>V.WEAK</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Absences<br>en heures/in hours</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="2">Application</td>
+                    <td  colspan="8" style="text-align: left; border: solid black; ">
+                        An effort is needed in:<br>
+                        Un effort s'impose en:<br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ</td>
+                    <td class="table2_in"></td>
+                    <td  colspan="8" rowspan="5" style="text-align: left; border: solid black; text-decoration: none; vertical-align: baseline ">
+
+
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physics</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Chemistry</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Biology</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Mathematics</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Geography</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Literature</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Language</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; French</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physical Education</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; History</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Computer Studies</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Citizenship Education</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Retenues/Punishments<br>en heures/in hours</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Avertissement<br>Serious Warnings</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Exclusion<br>Temp Suspension<br>en jours/days</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Motif</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <table style="width: 100%; text-align: center; border-collapse: collapse;">
+        <tr style="color: white; background-color: blue" >
+            <td class="table2_in" colspan="2">REMARK AND SIGNATURE OF CLASS MASTER<br>OBSERVATIONS ET VISA DU PROFESSEUR</td>
+        </tr>
+        <tr>
+            <td class="table2_in"  colspan="2"><textarea style="width: 100%; height: 100px;" ></textarea></td>
+        </tr>
+        <tr style="color: white; background: blue;" >
+            <td class="table2_in">REMARK AND SIGNATURE OF PARENT<br>OBSERVATIONS ET VISA DU PARENT</td>
+            <td class="table2_in">REMARK AND SIGNATURE OF DISCIPLINE MASTER/PRINCIPAL <br>OBSERVATION ET VISA DU CHEF D'ETABLISSEMENT</td>
+        </tr>
+        <tr style="height: 200px;">
+            <td class="table2_in" style="height: 50px;"></td>
+            <td class="table2_in" style="height: 50px; text-align: left;">
+                <div style="border-bottom: solid black;margin-bottom:2%;"></div>
+                <div style="width: 50%; border-bottom: solid black;">DZENG,le</div>
+            </td>
+        </tr>
+
+    </table>
+    </div>
+    <p style="page-break-after: always;"></p>
+    
+    <div id="report_container">
+            <table style="width: 100%; text-align: left; color: blue;"  >
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Name</td>
+                    <td class="table2_in">ESSOMBA OVIDI UNIS</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Annee Academic<br>Academic year</td>
+                    <td class="table2_in">2019/2020</td>
+                </tr>
+                <tr><td colspan="2" class="table2_in" style="width: 100%; text-align: center; background-color: blue;color: white">First term|Premiere tremestreEVALUATION OBSERVATION<br>OBSERVATIONS DU EVALUATION</td></tr>
+            </table>
+            <table style="width: 100%;margin:Opx;padding:0px;font-size:10px">
+                <tr style="width: 90%">
+                    <td class="table2_in" colspan="3">Discipline</td>
+                    <td class="table2_in" colspan="9">Work/Travail</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Retards/Punishment</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in" ><span style="margin:20px"></span></td>
+                    <td class="table2_in">Politesse<br>Politeness</td>
+                    <td class="table2_in" colspan="8">Appreciation<br>Appreciation</td>
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ/UNJ</td>
+                    <td class="table2_in" ></td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in">TB/EXCL</td>
+                    <td class="table2_in">B/VG</td>
+                    <td class="table2_in">AB/GOOD</td>
+                    <td class="table2_in">PASS/FAIR</td>
+                    <td class="table2_in">MED/AV</td>
+                    <td class="table2_in">INSU/INSUFF</td>
+                    <td class="table2_in">FAIB/WEAK</td>
+                    <td class="table2_in">TRES FAIB<br>V.WEAK</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Absences<br>en heures/in hours</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="2">Application</td>
+                    <td  colspan="8" style="text-align: left; border: solid black; ">
+                        An effort is needed in:<br>
+                        Un effort s'impose en:<br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ</td>
+                    <td class="table2_in"></td>
+                    <td  colspan="8" rowspan="5" style="text-align: left; border: solid black; text-decoration: none; vertical-align: baseline ">
+
+
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physics</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Chemistry</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Biology</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Mathematics</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Geography</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Literature</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Language</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physical Education</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; History</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Computer Studies</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Retenues/Punishments<br>en heures/in hours</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Avertissement<br>Serious Warnings</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Exclusion<br>Temp Suspension<br>en jours/days</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Motif</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <table style="width: 100%; text-align: center; border-collapse: collapse;">
+        <tr style="color: white; background-color: blue" >
+            <td class="table2_in" colspan="2">REMARK AND SIGNATURE OF CLASS MASTER<br>OBSERVATIONS ET VISA DU PROFESSEUR</td>
+        </tr>
+        <tr>
+            <td class="table2_in"  colspan="2"><textarea style="width: 100%; height: 100px;" ></textarea></td>
+        </tr>
+        <tr style="color: white; background: blue;" >
+            <td class="table2_in">REMARK AND SIGNATURE OF PARENT<br>OBSERVATIONS ET VISA DU PARENT</td>
+            <td class="table2_in">REMARK AND SIGNATURE OF DISCIPLINE MASTER/PRINCIPAL <br>OBSERVATION ET VISA DU CHEF D'ETABLISSEMENT</td>
+        </tr>
+        <tr style="height: 200px;">
+            <td class="table2_in" style="height: 50px;"></td>
+            <td class="table2_in" style="height: 50px; text-align: left;">
+                <div style="border-bottom: solid black;margin-bottom:2%;"></div>
+                <div style="width: 50%; border-bottom: solid black;">DZENG,le</div>
+            </td>
+        </tr>
+
+    </table>
+    </div>
+    <p style="page-break-after: always;"></p>
+    
+    <div id="report_container">
+            <table style="width: 100%; text-align: left; color: blue;"  >
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Name</td>
+                    <td class="table2_in">MEKA MBIDA SERGE MANUEL</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Annee Academic<br>Academic year</td>
+                    <td class="table2_in">2019/2020</td>
+                </tr>
+                <tr><td colspan="2" class="table2_in" style="width: 100%; text-align: center; background-color: blue;color: white">First term|Premiere tremestreEVALUATION OBSERVATION<br>OBSERVATIONS DU EVALUATION</td></tr>
+            </table>
+            <table style="width: 100%;margin:Opx;padding:0px;font-size:10px">
+                <tr style="width: 90%">
+                    <td class="table2_in" colspan="3">Discipline</td>
+                    <td class="table2_in" colspan="9">Work/Travail</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Retards/Punishment</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in" ><span style="margin:20px"></span></td>
+                    <td class="table2_in">Politesse<br>Politeness</td>
+                    <td class="table2_in" colspan="8">Appreciation<br>Appreciation</td>
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ/UNJ</td>
+                    <td class="table2_in" ></td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in">TB/EXCL</td>
+                    <td class="table2_in">B/VG</td>
+                    <td class="table2_in">AB/GOOD</td>
+                    <td class="table2_in">PASS/FAIR</td>
+                    <td class="table2_in">MED/AV</td>
+                    <td class="table2_in">INSU/INSUFF</td>
+                    <td class="table2_in">FAIB/WEAK</td>
+                    <td class="table2_in">TRES FAIB<br>V.WEAK</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Absences<br>en heures/in hours</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="2">Application</td>
+                    <td  colspan="8" style="text-align: left; border: solid black; ">
+                        An effort is needed in:<br>
+                        Un effort s'impose en:<br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ</td>
+                    <td class="table2_in"></td>
+                    <td  colspan="8" rowspan="5" style="text-align: left; border: solid black; text-decoration: none; vertical-align: baseline ">
+
+
+                
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physics</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Mathematics</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Geography</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Literature</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Language</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physical Education</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; History</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Computer Studies</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Citizenship Education</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Retenues/Punishments<br>en heures/in hours</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Avertissement<br>Serious Warnings</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Exclusion<br>Temp Suspension<br>en jours/days</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Motif</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <table style="width: 100%; text-align: center; border-collapse: collapse;">
+        <tr style="color: white; background-color: blue" >
+            <td class="table2_in" colspan="2">REMARK AND SIGNATURE OF CLASS MASTER<br>OBSERVATIONS ET VISA DU PROFESSEUR</td>
+        </tr>
+        <tr>
+            <td class="table2_in"  colspan="2"><textarea style="width: 100%; height: 100px;" ></textarea></td>
+        </tr>
+        <tr style="color: white; background: blue;" >
+            <td class="table2_in">REMARK AND SIGNATURE OF PARENT<br>OBSERVATIONS ET VISA DU PARENT</td>
+            <td class="table2_in">REMARK AND SIGNATURE OF DISCIPLINE MASTER/PRINCIPAL <br>OBSERVATION ET VISA DU CHEF D'ETABLISSEMENT</td>
+        </tr>
+        <tr style="height: 200px;">
+            <td class="table2_in" style="height: 50px;"></td>
+            <td class="table2_in" style="height: 50px; text-align: left;">
+                <div style="border-bottom: solid black;margin-bottom:2%;"></div>
+                <div style="width: 50%; border-bottom: solid black;">DZENG,le</div>
+            </td>
+        </tr>
+
+    </table>
+    </div>
+    <p style="page-break-after: always;"></p>
+    
+    <div id="report_container">
+            <table style="width: 100%; text-align: left; color: blue;"  >
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Name</td>
+                    <td class="table2_in">MEUGONG ZOGA</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Annee Academic<br>Academic year</td>
+                    <td class="table2_in">2019/2020</td>
+                </tr>
+                <tr><td colspan="2" class="table2_in" style="width: 100%; text-align: center; background-color: blue;color: white">First term|Premiere tremestreEVALUATION OBSERVATION<br>OBSERVATIONS DU EVALUATION</td></tr>
+            </table>
+            <table style="width: 100%;margin:Opx;padding:0px;font-size:10px">
+                <tr style="width: 90%">
+                    <td class="table2_in" colspan="3">Discipline</td>
+                    <td class="table2_in" colspan="9">Work/Travail</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Retards/Punishment</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in" ><span style="margin:20px"></span></td>
+                    <td class="table2_in">Politesse<br>Politeness</td>
+                    <td class="table2_in" colspan="8">Appreciation<br>Appreciation</td>
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ/UNJ</td>
+                    <td class="table2_in" ></td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in">TB/EXCL</td>
+                    <td class="table2_in">B/VG</td>
+                    <td class="table2_in">AB/GOOD</td>
+                    <td class="table2_in">PASS/FAIR</td>
+                    <td class="table2_in">MED/AV</td>
+                    <td class="table2_in">INSU/INSUFF</td>
+                    <td class="table2_in">FAIB/WEAK</td>
+                    <td class="table2_in">TRES FAIB<br>V.WEAK</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Absences<br>en heures/in hours</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="2">Application</td>
+                    <td  colspan="8" style="text-align: left; border: solid black; ">
+                        An effort is needed in:<br>
+                        Un effort s'impose en:<br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ</td>
+                    <td class="table2_in"></td>
+                    <td  colspan="8" rowspan="5" style="text-align: left; border: solid black; text-decoration: none; vertical-align: baseline ">
+
+
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physics</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Chemistry</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Biology</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Mathematics</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Geography</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Literature</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Language</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; French</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; History</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Computer Studies</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Citizenship Education</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Retenues/Punishments<br>en heures/in hours</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Avertissement<br>Serious Warnings</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Exclusion<br>Temp Suspension<br>en jours/days</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Motif</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <table style="width: 100%; text-align: center; border-collapse: collapse;">
+        <tr style="color: white; background-color: blue" >
+            <td class="table2_in" colspan="2">REMARK AND SIGNATURE OF CLASS MASTER<br>OBSERVATIONS ET VISA DU PROFESSEUR</td>
+        </tr>
+        <tr>
+            <td class="table2_in"  colspan="2"><textarea style="width: 100%; height: 100px;" ></textarea></td>
+        </tr>
+        <tr style="color: white; background: blue;" >
+            <td class="table2_in">REMARK AND SIGNATURE OF PARENT<br>OBSERVATIONS ET VISA DU PARENT</td>
+            <td class="table2_in">REMARK AND SIGNATURE OF DISCIPLINE MASTER/PRINCIPAL <br>OBSERVATION ET VISA DU CHEF D'ETABLISSEMENT</td>
+        </tr>
+        <tr style="height: 200px;">
+            <td class="table2_in" style="height: 50px;"></td>
+            <td class="table2_in" style="height: 50px; text-align: left;">
+                <div style="border-bottom: solid black;margin-bottom:2%;"></div>
+                <div style="width: 50%; border-bottom: solid black;">DZENG,le</div>
+            </td>
+        </tr>
+
+    </table>
+    </div>
+    <p style="page-break-after: always;"></p>
+    
+    <div id="report_container">
+            <table style="width: 100%; text-align: left; color: blue;"  >
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Name</td>
+                    <td class="table2_in">NGUELE OVIDI AGNES ORNELA</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Annee Academic<br>Academic year</td>
+                    <td class="table2_in">2019/2020</td>
+                </tr>
+                <tr><td colspan="2" class="table2_in" style="width: 100%; text-align: center; background-color: blue;color: white">First term|Premiere tremestreEVALUATION OBSERVATION<br>OBSERVATIONS DU EVALUATION</td></tr>
+            </table>
+            <table style="width: 100%;margin:Opx;padding:0px;font-size:10px">
+                <tr style="width: 90%">
+                    <td class="table2_in" colspan="3">Discipline</td>
+                    <td class="table2_in" colspan="9">Work/Travail</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Retards/Punishment</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in" ><span style="margin:20px"></span></td>
+                    <td class="table2_in">Politesse<br>Politeness</td>
+                    <td class="table2_in" colspan="8">Appreciation<br>Appreciation</td>
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ/UNJ</td>
+                    <td class="table2_in" ></td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in">TB/EXCL</td>
+                    <td class="table2_in">B/VG</td>
+                    <td class="table2_in">AB/GOOD</td>
+                    <td class="table2_in">PASS/FAIR</td>
+                    <td class="table2_in">MED/AV</td>
+                    <td class="table2_in">INSU/INSUFF</td>
+                    <td class="table2_in">FAIB/WEAK</td>
+                    <td class="table2_in">TRES FAIB<br>V.WEAK</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Absences<br>en heures/in hours</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="2">Application</td>
+                    <td  colspan="8" style="text-align: left; border: solid black; ">
+                        An effort is needed in:<br>
+                        Un effort s'impose en:<br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ</td>
+                    <td class="table2_in"></td>
+                    <td  colspan="8" rowspan="5" style="text-align: left; border: solid black; text-decoration: none; vertical-align: baseline ">
+
+
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Mathematics</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Literature</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Language</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physical Education</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Computer Studies</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Retenues/Punishments<br>en heures/in hours</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Avertissement<br>Serious Warnings</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Exclusion<br>Temp Suspension<br>en jours/days</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Motif</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <table style="width: 100%; text-align: center; border-collapse: collapse;">
+        <tr style="color: white; background-color: blue" >
+            <td class="table2_in" colspan="2">REMARK AND SIGNATURE OF CLASS MASTER<br>OBSERVATIONS ET VISA DU PROFESSEUR</td>
+        </tr>
+        <tr>
+            <td class="table2_in"  colspan="2"><textarea style="width: 100%; height: 100px;" ></textarea></td>
+        </tr>
+        <tr style="color: white; background: blue;" >
+            <td class="table2_in">REMARK AND SIGNATURE OF PARENT<br>OBSERVATIONS ET VISA DU PARENT</td>
+            <td class="table2_in">REMARK AND SIGNATURE OF DISCIPLINE MASTER/PRINCIPAL <br>OBSERVATION ET VISA DU CHEF D'ETABLISSEMENT</td>
+        </tr>
+        <tr style="height: 200px;">
+            <td class="table2_in" style="height: 50px;"></td>
+            <td class="table2_in" style="height: 50px; text-align: left;">
+                <div style="border-bottom: solid black;margin-bottom:2%;"></div>
+                <div style="width: 50%; border-bottom: solid black;">DZENG,le</div>
+            </td>
+        </tr>
+
+    </table>
+    </div>
+    <p style="page-break-after: always;"></p>
+    
+    <div id="report_container">
+            <table style="width: 100%; text-align: left; color: blue;"  >
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Name</td>
+                    <td class="table2_in">NNANGUELE ETIENNE TEDDY</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Annee Academic<br>Academic year</td>
+                    <td class="table2_in">2019/2020</td>
+                </tr>
+                <tr><td colspan="2" class="table2_in" style="width: 100%; text-align: center; background-color: blue;color: white">First term|Premiere tremestreEVALUATION OBSERVATION<br>OBSERVATIONS DU EVALUATION</td></tr>
+            </table>
+            <table style="width: 100%;margin:Opx;padding:0px;font-size:10px">
+                <tr style="width: 90%">
+                    <td class="table2_in" colspan="3">Discipline</td>
+                    <td class="table2_in" colspan="9">Work/Travail</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Retards/Punishment</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in" ><span style="margin:20px"></span></td>
+                    <td class="table2_in">Politesse<br>Politeness</td>
+                    <td class="table2_in" colspan="8">Appreciation<br>Appreciation</td>
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ/UNJ</td>
+                    <td class="table2_in" ></td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in">TB/EXCL</td>
+                    <td class="table2_in">B/VG</td>
+                    <td class="table2_in">AB/GOOD</td>
+                    <td class="table2_in">PASS/FAIR</td>
+                    <td class="table2_in">MED/AV</td>
+                    <td class="table2_in">INSU/INSUFF</td>
+                    <td class="table2_in">FAIB/WEAK</td>
+                    <td class="table2_in">TRES FAIB<br>V.WEAK</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Absences<br>en heures/in hours</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="2">Application</td>
+                    <td  colspan="8" style="text-align: left; border: solid black; ">
+                        An effort is needed in:<br>
+                        Un effort s'impose en:<br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ</td>
+                    <td class="table2_in"></td>
+                    <td  colspan="8" rowspan="5" style="text-align: left; border: solid black; text-decoration: none; vertical-align: baseline ">
+
+
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physics</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Chemistry</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Biology</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Mathematics</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Literature</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; French</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physical Education</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; History</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Computer Studies</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Citizenship Education</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Retenues/Punishments<br>en heures/in hours</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Avertissement<br>Serious Warnings</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Exclusion<br>Temp Suspension<br>en jours/days</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Motif</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <table style="width: 100%; text-align: center; border-collapse: collapse;">
+        <tr style="color: white; background-color: blue" >
+            <td class="table2_in" colspan="2">REMARK AND SIGNATURE OF CLASS MASTER<br>OBSERVATIONS ET VISA DU PROFESSEUR</td>
+        </tr>
+        <tr>
+            <td class="table2_in"  colspan="2"><textarea style="width: 100%; height: 100px;" ></textarea></td>
+        </tr>
+        <tr style="color: white; background: blue;" >
+            <td class="table2_in">REMARK AND SIGNATURE OF PARENT<br>OBSERVATIONS ET VISA DU PARENT</td>
+            <td class="table2_in">REMARK AND SIGNATURE OF DISCIPLINE MASTER/PRINCIPAL <br>OBSERVATION ET VISA DU CHEF D'ETABLISSEMENT</td>
+        </tr>
+        <tr style="height: 200px;">
+            <td class="table2_in" style="height: 50px;"></td>
+            <td class="table2_in" style="height: 50px; text-align: left;">
+                <div style="border-bottom: solid black;margin-bottom:2%;"></div>
+                <div style="width: 50%; border-bottom: solid black;">DZENG,le</div>
+            </td>
+        </tr>
+
+    </table>
+    </div>
+    <p style="page-break-after: always;"></p>
+    
+    <div id="report_container">
+            <table style="width: 100%; text-align: left; color: blue;"  >
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Name</td>
+                    <td class="table2_in">OWONA NDOUBENA EMILIE</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" style="width: 20%;">Annee Academic<br>Academic year</td>
+                    <td class="table2_in">2019/2020</td>
+                </tr>
+                <tr><td colspan="2" class="table2_in" style="width: 100%; text-align: center; background-color: blue;color: white">First term|Premiere tremestreEVALUATION OBSERVATION<br>OBSERVATIONS DU EVALUATION</td></tr>
+            </table>
+            <table style="width: 100%;margin:Opx;padding:0px;font-size:10px">
+                <tr style="width: 90%">
+                    <td class="table2_in" colspan="3">Discipline</td>
+                    <td class="table2_in" colspan="9">Work/Travail</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Retards/Punishment</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in" ><span style="margin:20px"></span></td>
+                    <td class="table2_in">Politesse<br>Politeness</td>
+                    <td class="table2_in" colspan="8">Appreciation<br>Appreciation</td>
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ/UNJ</td>
+                    <td class="table2_in" ></td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in">TB/EXCL</td>
+                    <td class="table2_in">B/VG</td>
+                    <td class="table2_in">AB/GOOD</td>
+                    <td class="table2_in">PASS/FAIR</td>
+                    <td class="table2_in">MED/AV</td>
+                    <td class="table2_in">INSU/INSUFF</td>
+                    <td class="table2_in">FAIB/WEAK</td>
+                    <td class="table2_in">TRES FAIB<br>V.WEAK</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Absences<br>en heures/in hours</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="2">Application</td>
+                    <td  colspan="8" style="text-align: left; border: solid black; ">
+                        An effort is needed in:<br>
+                        Un effort s'impose en:<br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ</td>
+                    <td class="table2_in"></td>
+                    <td  colspan="8" rowspan="5" style="text-align: left; border: solid black; text-decoration: none; vertical-align: baseline ">
+
+
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physics</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Chemistry</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Biology</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Mathematics</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Geography</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Literature</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Language</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physical Education</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; History</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Computer Studies</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Citizenship Education</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Retenues/Punishments<br>en heures/in hours</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Avertissement<br>Serious Warnings</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Exclusion<br>Temp Suspension<br>en jours/days</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Motif</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <table style="width: 100%; text-align: center; border-collapse: collapse;">
+        <tr style="color: white; background-color: blue" >
+            <td class="table2_in" colspan="2">REMARK AND SIGNATURE OF CLASS MASTER<br>OBSERVATIONS ET VISA DU PROFESSEUR</td>
+        </tr>
+        <tr>
+            <td class="table2_in"  colspan="2"><textarea style="width: 100%; height: 100px;" ></textarea></td>
+        </tr>
+        <tr style="color: white; background: blue;" >
+            <td class="table2_in">REMARK AND SIGNATURE OF PARENT<br>OBSERVATIONS ET VISA DU PARENT</td>
+            <td class="table2_in">REMARK AND SIGNATURE OF DISCIPLINE MASTER/PRINCIPAL <br>OBSERVATION ET VISA DU CHEF D'ETABLISSEMENT</td>
+        </tr>
+        <tr style="height: 200px;">
+            <td class="table2_in" style="height: 50px;"></td>
+            <td class="table2_in" style="height: 50px; text-align: left;">
+                <div style="border-bottom: solid black;margin-bottom:2%;"></div>
+                <div style="width: 50%; border-bottom: solid black;">DZENG,le</div>
+            </td>
+        </tr>
+
+    </table>
+    </div>
+    <p style="page-break-after: always;"></p>
+    
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,2240 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .blue{
+    color:blue;
+    margin: 5px;:
+    border:solid black 10px;
+}
+.blue:nth-child(even){
+    background-color: blue;
+    color: white;
+    /*border: solid black 10px;*/
+}
+.fail{
+    color: red;
+}
+
+#report_container{
+     border: solid 5px blue;
+    height: 100%;
+    margin: 5% 1% 5% 1%;
+}
+#student_name_span{
+    border: solid blue;
+}
+#sequence{
+    text-align: center;
+    /*border: solid black;*/
+}
+#sh1{
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    color: white;background-color:blue;
+    /*width: fit-content;*/
+    border: solid blue;
+}
+#table-container{
+    border: solid blue;
+    width: 100%;
+
+    border-collapse: collapse;
+    ;
+}
+#tableaverage{
+    width: 100%;
+    border: blue 30px;
+    margin-top: 3%;
+}
+.rotate{
+    transform: rotateX(90deg);
+}
+#student_name{
+    border: solid blue;
+    width: 100%;
+    padding: 2%;
+    text-align: left;
+}
+
+@media print{
+    #print_button{
+    display: none;
+}
+    #backbotton{
+        display:none
+    }
+    #backbotton{
+        display: none;
+    }
+    #forwardbotton{
+        display: none;
+    }
+    .blue:nth-child(even){
+        background-color:blue ;
+        border: solid blue 2px;
+        color: blue;
+}
+    }
+
+.table2_in{
+    padding: 1%;
+    border: solid black;
+}
+.admin_nav_div1{
+    margin: 2% 0% 0% 0%;
+    padding:0% 0% 2% 0%;
+    color:white;
+    width: 100%;
+    background-color: rgba(50,50,50,1);
+}
+.nav_anchor{
+    border:solid black;
+    text-decoration: none;
+    color: white;
+
+}
+#backbotton:hover{
+    -webkit-animation-name: backbutton;
+    -moz-animation-name: backbutton;
+    -o-animation-name: backbutton;
+    animation-name: backbutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes backbutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+        transform: translateX(-100px);}
+}
+#forwardbotton:hover{
+    -webkit-animation-name: forwabutton;
+    -moz-animation-name: forwabutton;
+    -o-animation-name: forwabutton;
+    animation-name: forwabutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes forwabutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+        transform: translateX(100px);}
+
+    </style>
+
+</head>
+<body style="margin:0px">
+
+
+
+        <div style="font-size:10px">
+            <div id="report_container">
+
+                <table id="student_name" >
+                    <thead>
+
+                        <tr style="padding: 2%;">
+                            <td style="width: 20%; ">Name/Noms:</td>
+                            <td style="border-bottom: solid blue; padding: 1%;">ANGONO KANA GENMAINE</td>
+                        </tr>
+                        <tr>
+                            <td>Academic Year/Annee scolaire:</td>
+                            <td style="border-bottom: solid blue; padding: 1%;">2019/2020</td>
+                        </tr>
+
+                    </thead>
+                </table>
+
+                <div id="sequence">
+                    <span id="sh1" >First term|Premier trimestre<sup></sup>  EVALUATION</span>
+                </div>
+
+                <table border="solid" id="table-container">
+                    <thead style="color: rgb(50,50,50);text-align:center;">
+                    <tr>
+                        <td>Subject<br>Discipline</td>
+                        <td>Mark/20<br>Note/20</td>
+                        <td>coeff</td>
+                        <td>N*coeff</td>
+                        <td>Posit</td>
+                        <td>Competence</td>
+                        <td>Teacher's Appreciation<br>Appreciation des professeurs</td>
+                        <td>Teacher/Professeur</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                            
+                                
+                                <tr>
+                                    <td>Physics</td>
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                        <td style="color: red">8.5</td>
+                                                        <td style="color: red">2</td>
+                                                        <td style="color: red;">17.0</td>
+                                                        <td style="color:red">2</td>
+                                                        <td style="color: red;">Ongoing acquisitionNot acquired</td>
+
+                                                            
+                                                                <td style="color: red;">not Acquired</td>
+                                                            
+                                                        <td style="color: red;">happi</td>
+
+                                                        
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Chemistry</td>
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                        <td style="color: red">8.5</td>
+                                                        <td style="color: red">2</td>
+                                                        <td style="color: red;">17.0</td>
+                                                        <td style="color:red">2</td>
+                                                        <td style="color: red;">//</td>
+
+                                                            
+                                                                <td style="color: red;">not Acquired</td>
+                                                            
+                                                        <td style="color: red;">mbangsi</td>
+
+                                                        
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Biology</td>
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">10.0</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">20.0</td>
+                                                            <td>2</td>
+                                                            <td style="color: black">Acquisition of animal rearing techniques and artificial cultivation of plantsAbility to understand reproduction in various species</td>
+                                                            
+                                                                <td style="color: black;">not Acquired</td>
+                                                                
+                                                                <td>eneke</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                            
+                                
+                                <tr>
+                                    <td>Geography</td>
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">15.5</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">31.0</td>
+                                                            <td>2</td>
+                                                            <td style="color: black">To manage pollution 
+Classify the world into different natural regions Be able to manage the environment </td>
+                                                            
+                                                                    <td style="color: black;">Competence Acquired</td>
+                                                                
+                                                                <td>ndangang</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>English Literature</td>
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                        <td style="color: red">8.0</td>
+                                                        <td style="color: red">2</td>
+                                                        <td style="color: red;">16.0</td>
+                                                        <td style="color:red">3</td>
+                                                        <td style="color: red;">The purpose of Literature The purpose of Literature </td>
+
+                                                            
+                                                                <td style="color: red;">not Acquired</td>
+                                                            
+                                                        <td style="color: red;">ngafi</td>
+
+                                                        
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>English Language</td>
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                        <td style="color: red">8.5</td>
+                                                        <td style="color: red">4</td>
+                                                        <td style="color: red;">34.0</td>
+                                                        <td style="color:red">3</td>
+                                                        <td style="color: red;">*readingTo enhance listening and writing skills</td>
+
+                                                            
+                                                                <td style="color: red;">not Acquired</td>
+                                                            
+                                                        <td style="color: red;">ngafi</td>
+
+                                                        
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>French</td>
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">15.5</td>
+                                                            <td style="color: black">4</td>
+                                                            <td style="color: black">62.0</td>
+                                                            <td>3</td>
+                                                            <td style="color: black">*SE SERVIR DES NOTIONS DE GRAMMAIRE,D'ORTHOGRAPHE,DE VOCABULAIRE ET DE CONJUGAISON POUR PARLER DE LA VIE FAMILIALE ET POUR SON INTEGRATION SOCIALE*SE SERVIR DES NOTIONS DE GRAMMAIRE,D'ORTHOGRAPHE,DE VOCABULAIRE ET DE CONJUGAISON POUR PARLER DE LA VIE FAMILIALE ET POUR SON INTEGRATION SOCIALE</td>
+                                                            
+                                                                    <td style="color: black;">Competence Acquired</td>
+                                                                
+                                                                <td>bebolo</td>
+                                                            
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Manual Labour</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">20.0</td>
+                                                            <td style="color: black">1</td>
+                                                            <td style="color: black">20.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">excellentExcellent</td>
+                                                            
+                                                                    <td style="color: black;">Excellent</td>
+                                                                
+                                                                <td>happi</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Physical Education</td>
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">18.0</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">36.0</td>
+                                                            <td>3</td>
+                                                            <td style="color: black">Réaliser une performance motrice maximale mesurable à une échéance donnéeRéaliser une performance motrice maximale mesurable à une échéance donnée</td>
+                                                            
+                                                                    <td style="color: black;">Excellent</td>
+                                                                
+                                                                <td>ngoh</td>
+                                                            
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>History</td>
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">12.5</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">25.0</td>
+                                                            <td>2</td>
+                                                            <td style="color: black">AcquiredStill to acquire</td>
+                                                            
+                                                                    <td style="color: black;">Ongoing Acquisition</td>
+                                                                
+                                                                <td>fuanji</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Computer Studies</td>
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                        <td style="color: red">7.0</td>
+                                                        <td style="color: red">2</td>
+                                                        <td style="color: red;">14.0</td>
+                                                        <td style="color:red">3</td>
+                                                        <td style="color: red;">Appreciate the existence and use of different hardware componentsAppreciate the existence and use of different hardware components.</td>
+
+                                                            
+                                                                <td style="color: red;">not Acquired</td>
+                                                            
+                                                        <td style="color: red;">dingbobga</td>
+
+                                                        
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Citizenship Education</td>
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">16.5</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">33.0</td>
+                                                            <td>2</td>
+                                                            <td style="color: black">Expert*social life in a village</td>
+                                                            
+                                                                    <td style="color: black;">Competence Acquired</td>
+                                                                
+                                                                <td>fuanji</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+
+                    </tbody>
+                </table>
+
+            <table border="solid" id="tableaverage">
+                <tfoot>
+            
+                
+
+                    
+                    
+
+                    
+                    
+
+                    
+                        
+                                <tr>
+                                    <td style="width: 20%;">Total</td>
+                                    <td>325.0</td>
+                                    <td rowspan="3" style="text-align: center">posit</td>
+                                    <td rowspan="3" style="text-align: center">3/3</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;">Moyenne sequential<br>sequence average</td>
+
+                                    <td>12.04/20</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;">Moyenne General De La Classe<br>
+                                    class average</td>
+                                    <td>13.23</td>
+                                </tr>
+                                            
+                
+                </tfoot>
+            </table>
+
+
+            <table style="width: 100%;margin:Opx;padding:0px;font-size:10px">
+                <tr style="width: 90%">
+                    <td class="table2_in" colspan="3">Discipline</td>
+                    <td class="table2_in" colspan="9">Work/Travail</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Retards/Punishment</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in" ><span style="margin:20px"></span></td>
+                    <td class="table2_in">Politesse<br>Politeness</td>
+                    <td class="table2_in" colspan="8">Appreciation<br>Appreciation</td>
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ/UNJ</td>
+                    <td class="table2_in" ></td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in">TB/EXCL</td>
+                    <td class="table2_in">B/VG</td>
+                    <td class="table2_in">AB/GOOD</td>
+                    <td class="table2_in">PASS/FAIR</td>
+                    <td class="table2_in">MED/AV</td>
+                    <td class="table2_in">INSU/INSUFF</td>
+                    <td class="table2_in">FAIB/WEAK</td>
+                    <td class="table2_in">TRES FAIB<br>V.WEAK</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Absences<br>en heures/in hours</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="2">Application</td>
+                    <td  colspan="8" style="text-align: left; border: solid black; ">
+                        An effort is needed in:<br>
+                        Un effort s'impose en:<br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ</td>
+                    <td class="table2_in"></td>
+                    <td  colspan="8" rowspan="5" style="text-align: left; border: solid black; text-decoration: none; vertical-align: baseline ">
+
+
+                
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physics</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Chemistry</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Biology</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Literature</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Language</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Computer Studies</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Retenues/Punishments<br>en heures/in hours</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Avertissement<br>Serious Warnings</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Exclusion<br>Temp Suspension<br>en jours/days</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Motif</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <table style="width: 100%; text-align: center; border-collapse: collapse; font-size:8px;">
+        <tr style="color: white; background-color: blue" >
+            <td class="table2_in" colspan="2">REMARK AND SIGNATURE OF CLASS MASTER<br>OBSERVATIONS ET VISA DU PROFESSEUR PRINCIPAL</td>
+        </tr>
+        <tr>
+            <td class="table2_in"  colspan="2"><textarea style="width: 100%; height: 30px;" ></textarea></td>
+        </tr>
+        <tr style="color: white; background: blue;" >
+            <td class="table2_in">REMARK AND SIGNATURE OF PARENT<br>OBSERVATIONS ET VISA DU PARENT</td>
+            <td class="table2_in">REMARK AND SIGNATURE OF PRINCIPAL <br>OBSERVATION ET VISA DU CHEF D'ETABLISSEMENT</td>
+        </tr>
+        <tr style="height: 20px;">
+            <td class="table2_in" style="height: 10px;"></td>
+            <td class="table2_in" style="height: 10px; text-align: left;">
+                <div style="border-bottom: solid black;margin-bottom:0%;"></div>
+                <div style="width: 50%; border-bottom: solid black;">DZENG,le</div>
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+        </div>
+
+        <p style="page-break-after: always;"></p>
+
+
+        <div style="font-size:10px">
+            <div id="report_container">
+
+                <table id="student_name" >
+                    <thead>
+
+                        <tr style="padding: 2%;">
+                            <td style="width: 20%; ">Name/Noms:</td>
+                            <td style="border-bottom: solid blue; padding: 1%;">EFFA EFFA PIERE FOURRIERE</td>
+                        </tr>
+                        <tr>
+                            <td>Academic Year/Annee scolaire:</td>
+                            <td style="border-bottom: solid blue; padding: 1%;">2019/2020</td>
+                        </tr>
+
+                    </thead>
+                </table>
+
+                <div id="sequence">
+                    <span id="sh1" >First term|Premier trimestre<sup></sup>  EVALUATION</span>
+                </div>
+
+                <table border="solid" id="table-container">
+                    <thead style="color: rgb(50,50,50);text-align:center;">
+                    <tr>
+                        <td>Subject<br>Discipline</td>
+                        <td>Mark/20<br>Note/20</td>
+                        <td>coeff</td>
+                        <td>N*coeff</td>
+                        <td>Posit</td>
+                        <td>Competence</td>
+                        <td>Teacher's Appreciation<br>Appreciation des professeurs</td>
+                        <td>Teacher/Professeur</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                            
+                                
+                                <tr>
+                                    <td>Physics</td>
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                        <td style="color: red">8.5</td>
+                                                        <td style="color: red">2</td>
+                                                        <td style="color: red;">17.0</td>
+                                                        <td style="color:red">3</td>
+                                                        <td style="color: red;">Not acquiredNot acquired</td>
+
+                                                            
+                                                                <td style="color: red;">not Acquired</td>
+                                                            
+                                                        <td style="color: red;">happi</td>
+
+                                                        
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Chemistry</td>
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                        <td style="color: red">5.75</td>
+                                                        <td style="color: red">2</td>
+                                                        <td style="color: red;">11.5</td>
+                                                        <td style="color:red">3</td>
+                                                        <td style="color: red;">//</td>
+
+                                                            
+                                                                <td style="color: red;">not Acquired</td>
+                                                            
+                                                        <td style="color: red;">mbangsi</td>
+
+                                                        
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Biology</td>
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                        <td style="color: red">8.0</td>
+                                                        <td style="color: red">2</td>
+                                                        <td style="color: red;">16.0</td>
+                                                        <td style="color:red">3</td>
+                                                        <td style="color: red;">Acquisition of animal rearing techniques and artificial cultivation of plantsAbility to understand reproduction in various species</td>
+
+                                                            
+                                                                <td style="color: red;">not Acquired</td>
+                                                            
+                                                        <td style="color: red;">eneke</td>
+
+                                                        
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                            
+                                
+                                <tr>
+                                    <td>Geography</td>
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">14.0</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">28.0</td>
+                                                            <td>3</td>
+                                                            <td style="color: black">To manage pollution 
+Classify the world into different natural regions Be able to manage the environment </td>
+                                                            
+                                                                    <td style="color: black;">Ongoing Acquisition</td>
+                                                                
+                                                                <td>ndangang</td>
+                                                            
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>English Literature</td>
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">11.0</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">22.0</td>
+                                                            <td>2</td>
+                                                            <td style="color: black">The purpose of Literature The purpose of Literature </td>
+                                                            
+                                                                    <td style="color: black;">Ongoing Acquisition</td>
+                                                                
+                                                                <td>ngafi</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>English Language</td>
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">10.5</td>
+                                                            <td style="color: black">4</td>
+                                                            <td style="color: black">42.0</td>
+                                                            <td>2</td>
+                                                            <td style="color: black">*readingTo enhance listening and writing skills</td>
+                                                            
+                                                                    <td style="color: black;">Ongoing Acquisition</td>
+                                                                
+                                                                <td>ngafi</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>French</td>
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">17.5</td>
+                                                            <td style="color: black">4</td>
+                                                            <td style="color: black">70.0</td>
+                                                            <td>2</td>
+                                                            <td style="color: black">*SE SERVIR DES NOTIONS DE GRAMMAIRE,D'ORTHOGRAPHE,DE VOCABULAIRE ET DE CONJUGAISON POUR PARLER DE LA VIE FAMILIALE ET POUR SON INTEGRATION SOCIALE*SE SERVIR DES NOTIONS DE GRAMMAIRE,D'ORTHOGRAPHE,DE VOCABULAIRE ET DE CONJUGAISON POUR PARLER DE LA VIE FAMILIALE ET POUR SON INTEGRATION SOCIALE</td>
+                                                            
+                                                                    <td style="color: black;">Excellent</td>
+                                                                
+                                                                <td>bebolo</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Manual Labour</td>
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">19.0</td>
+                                                            <td style="color: black">1</td>
+                                                            <td style="color: black">19.0</td>
+                                                            <td>2</td>
+                                                            <td style="color: black">excellentExcellent</td>
+                                                            
+                                                                    <td style="color: black;">Excellent</td>
+                                                                
+                                                                <td>happi</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Physical Education</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">19.0</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">38.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">Réaliser une performance motrice maximale mesurable à une échéance donnéeRéaliser une performance motrice maximale mesurable à une échéance donnée</td>
+                                                            
+                                                                    <td style="color: black;">Excellent</td>
+                                                                
+                                                                <td>ngoh</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>History</td>
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">10.0</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">20.0</td>
+                                                            <td>3</td>
+                                                            <td style="color: black">In the course of acquiringIn the course of acquiring</td>
+                                                            
+                                                                <td style="color: black;">not Acquired</td>
+                                                                
+                                                                <td>fuanji</td>
+                                                            
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Computer Studies</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">10.0</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">20.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">Appreciate the existence and use of different hardware componentsAppreciate the existence and use of different hardware components</td>
+                                                            
+                                                                <td style="color: black;">not Acquired</td>
+                                                                
+                                                                <td>dingbobga</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Citizenship Education</td>
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">15.5</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">31.0</td>
+                                                            <td>3</td>
+                                                            <td style="color: black">Acquired*social life in a village</td>
+                                                            
+                                                                    <td style="color: black;">Competence Acquired</td>
+                                                                
+                                                                <td>fuanji</td>
+                                                            
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+
+                    </tbody>
+                </table>
+
+            <table border="solid" id="tableaverage">
+                <tfoot>
+            
+                
+
+                    
+                    
+
+                    
+                        
+                                <tr>
+                                    <td style="width: 20%;">Total</td>
+                                    <td>334.5</td>
+                                    <td rowspan="3" style="text-align: center">posit</td>
+                                    <td rowspan="3" style="text-align: center">2/3</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;">Moyenne sequential<br>sequence average</td>
+
+                                    <td>12.37/20</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;">Moyenne General De La Classe<br>
+                                    class average</td>
+                                    <td>13.23</td>
+                                </tr>
+                                            
+                
+                </tfoot>
+            </table>
+
+
+            <table style="width: 100%;margin:Opx;padding:0px;font-size:10px">
+                <tr style="width: 90%">
+                    <td class="table2_in" colspan="3">Discipline</td>
+                    <td class="table2_in" colspan="9">Work/Travail</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Retards/Punishment</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in" ><span style="margin:20px"></span></td>
+                    <td class="table2_in">Politesse<br>Politeness</td>
+                    <td class="table2_in" colspan="8">Appreciation<br>Appreciation</td>
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ/UNJ</td>
+                    <td class="table2_in" ></td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in">TB/EXCL</td>
+                    <td class="table2_in">B/VG</td>
+                    <td class="table2_in">AB/GOOD</td>
+                    <td class="table2_in">PASS/FAIR</td>
+                    <td class="table2_in">MED/AV</td>
+                    <td class="table2_in">INSU/INSUFF</td>
+                    <td class="table2_in">FAIB/WEAK</td>
+                    <td class="table2_in">TRES FAIB<br>V.WEAK</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Absences<br>en heures/in hours</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="2">Application</td>
+                    <td  colspan="8" style="text-align: left; border: solid black; ">
+                        An effort is needed in:<br>
+                        Un effort s'impose en:<br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ</td>
+                    <td class="table2_in"></td>
+                    <td  colspan="8" rowspan="5" style="text-align: left; border: solid black; text-decoration: none; vertical-align: baseline ">
+
+
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Physics</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Chemistry</div>
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Biology</div>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; English Language</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; History</div>
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Computer Studies</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Retenues/Punishments<br>en heures/in hours</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Avertissement<br>Serious Warnings</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Exclusion<br>Temp Suspension<br>en jours/days</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Motif</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <table style="width: 100%; text-align: center; border-collapse: collapse; font-size:8px;">
+        <tr style="color: white; background-color: blue" >
+            <td class="table2_in" colspan="2">REMARK AND SIGNATURE OF CLASS MASTER<br>OBSERVATIONS ET VISA DU PROFESSEUR PRINCIPAL</td>
+        </tr>
+        <tr>
+            <td class="table2_in"  colspan="2"><textarea style="width: 100%; height: 30px;" ></textarea></td>
+        </tr>
+        <tr style="color: white; background: blue;" >
+            <td class="table2_in">REMARK AND SIGNATURE OF PARENT<br>OBSERVATIONS ET VISA DU PARENT</td>
+            <td class="table2_in">REMARK AND SIGNATURE OF PRINCIPAL <br>OBSERVATION ET VISA DU CHEF D'ETABLISSEMENT</td>
+        </tr>
+        <tr style="height: 20px;">
+            <td class="table2_in" style="height: 10px;"></td>
+            <td class="table2_in" style="height: 10px; text-align: left;">
+                <div style="border-bottom: solid black;margin-bottom:0%;"></div>
+                <div style="width: 50%; border-bottom: solid black;">DZENG,le</div>
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+        </div>
+
+        <p style="page-break-after: always;"></p>
+
+
+        <div style="font-size:10px">
+            <div id="report_container">
+
+                <table id="student_name" >
+                    <thead>
+
+                        <tr style="padding: 2%;">
+                            <td style="width: 20%; ">Name/Noms:</td>
+                            <td style="border-bottom: solid blue; padding: 1%;">ESSOMBA ONGUENE SCHIPHRA</td>
+                        </tr>
+                        <tr>
+                            <td>Academic Year/Annee scolaire:</td>
+                            <td style="border-bottom: solid blue; padding: 1%;">2019/2020</td>
+                        </tr>
+
+                    </thead>
+                </table>
+
+                <div id="sequence">
+                    <span id="sh1" >First term|Premier trimestre<sup></sup>  EVALUATION</span>
+                </div>
+
+                <table border="solid" id="table-container">
+                    <thead style="color: rgb(50,50,50);text-align:center;">
+                    <tr>
+                        <td>Subject<br>Discipline</td>
+                        <td>Mark/20<br>Note/20</td>
+                        <td>coeff</td>
+                        <td>N*coeff</td>
+                        <td>Posit</td>
+                        <td>Competence</td>
+                        <td>Teacher's Appreciation<br>Appreciation des professeurs</td>
+                        <td>Teacher/Professeur</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                            
+                                
+                                <tr>
+                                    <td>Physics</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">11.0</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">22.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">Ongoing acquisitionOngoing acquisition</td>
+                                                            
+                                                                    <td style="color: black;">Ongoing Acquisition</td>
+                                                                
+                                                                <td>happi</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Chemistry</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">10.75</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">21.5</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">//</td>
+                                                            
+                                                                    <td style="color: black;">Ongoing Acquisition</td>
+                                                                
+                                                                <td>mbangsi</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Biology</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">15.0</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">30.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">Acquisition of animal rearing techniques and artificial cultivation of plantsAbility to understand reproduction in various species</td>
+                                                            
+                                                                    <td style="color: black;">Competence Acquired</td>
+                                                                
+                                                                <td>eneke</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                            
+                                
+                                <tr>
+                                    <td>Geography</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">18.0</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">36.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">To manage pollution 
+Classify the world into different natural regions Be able to manage the environment </td>
+                                                            
+                                                                    <td style="color: black;">Excellent</td>
+                                                                
+                                                                <td>ndangang</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>English Literature</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">14.0</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">28.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">The purpose of Literature The purpose of Literature </td>
+                                                            
+                                                                    <td style="color: black;">Ongoing Acquisition</td>
+                                                                
+                                                                <td>ngafi</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>English Language</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">12.5</td>
+                                                            <td style="color: black">4</td>
+                                                            <td style="color: black">50.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">*readingTo enhance listening and writing skills </td>
+                                                            
+                                                                    <td style="color: black;">Ongoing Acquisition</td>
+                                                                
+                                                                <td>ngafi</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>French</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">19.0</td>
+                                                            <td style="color: black">4</td>
+                                                            <td style="color: black">76.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">*SE SERVIR DES NOTIONS DE GRAMMAIRE,D'ORTHOGRAPHE,DE VOCABULAIRE ET DE CONJUGAISON POUR PARLER DE LA VIE FAMILIALE ET POUR SON INTEGRATION SOCIALE*SE SERVIR DES NOTIONS DE GRAMMAIRE,D'ORTHOGRAPHE,DE VOCABULAIRE ET DE CONJUGAISON POUR PARLER DE LA VIE FAMILIALE ET POUR SON INTEGRATION SOCIALE</td>
+                                                            
+                                                                    <td style="color: black;">Excellent</td>
+                                                                
+                                                                <td>bebolo</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Manual Labour</td>
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">18.0</td>
+                                                            <td style="color: black">1</td>
+                                                            <td style="color: black">18.0</td>
+                                                            <td>3</td>
+                                                            <td style="color: black">excellentExcellent</td>
+                                                            
+                                                                    <td style="color: black;">Excellent</td>
+                                                                
+                                                                <td>happi</td>
+                                                            
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Physical Education</td>
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">19.0</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">38.0</td>
+                                                            <td>2</td>
+                                                            <td style="color: black">Réaliser une performance motrice maximale mesurable à une échéance donnéeRéaliser une performance motrice maximale mesurable à une échéance donnée</td>
+                                                            
+                                                                    <td style="color: black;">Excellent</td>
+                                                                
+                                                                <td>ngoh</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>History</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">19.5</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">39.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">ExpertExpert</td>
+                                                            
+                                                                    <td style="color: black;">Excellent</td>
+                                                                
+                                                                <td>fuanji</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Computer Studies</td>
+                                    
+
+                                        
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">10.0</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">20.0</td>
+                                                            <td>2</td>
+                                                            <td style="color: black">Appreciate the existence and use of different hardware componentsAppreciate the existence and use of different hardware components</td>
+                                                            
+                                                                <td style="color: black;">not Acquired</td>
+                                                                
+                                                                <td>dingbobga</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Citizenship Education</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">17.5</td>
+                                                            <td style="color: black">2</td>
+                                                            <td style="color: black">35.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">Expert*social life in a village</td>
+                                                            
+                                                                    <td style="color: black;">Excellent</td>
+                                                                
+                                                                <td>fuanji</td>
+                                                            
+
+                                        
+                                    
+
+                                        
+                                    
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+
+                    </tbody>
+                </table>
+
+            <table border="solid" id="tableaverage">
+                <tfoot>
+            
+                
+
+                    
+                        
+                                <tr>
+                                    <td style="width: 20%;">Total</td>
+                                    <td>413.5</td>
+                                    <td rowspan="3" style="text-align: center">posit</td>
+                                    <td rowspan="3" style="text-align: center">1/3</td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;">Moyenne sequential<br>sequence average</td>
+
+                                    <td>15.30/20</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;">Moyenne General De La Classe<br>
+                                    class average</td>
+                                    <td>13.23</td>
+                                </tr>
+                                            
+                
+                </tfoot>
+            </table>
+
+
+            <table style="width: 100%;margin:Opx;padding:0px;font-size:10px">
+                <tr style="width: 90%">
+                    <td class="table2_in" colspan="3">Discipline</td>
+                    <td class="table2_in" colspan="9">Work/Travail</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Retards/Punishment</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in" ><span style="margin:20px"></span></td>
+                    <td class="table2_in">Politesse<br>Politeness</td>
+                    <td class="table2_in" colspan="8">Appreciation<br>Appreciation</td>
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ/UNJ</td>
+                    <td class="table2_in" ></td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in">TB/EXCL</td>
+                    <td class="table2_in">B/VG</td>
+                    <td class="table2_in">AB/GOOD</td>
+                    <td class="table2_in">PASS/FAIR</td>
+                    <td class="table2_in">MED/AV</td>
+                    <td class="table2_in">INSU/INSUFF</td>
+                    <td class="table2_in">FAIB/WEAK</td>
+                    <td class="table2_in">TRES FAIB<br>V.WEAK</td>
+                </tr>
+                <tr>
+                    <td class="table2_in" rowspan="2">Absences<br>en heures/in hours</td>
+                    <td class="table2_in">J</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="2">Application</td>
+                    <td  colspan="8" style="text-align: left; border: solid black; ">
+                        An effort is needed in:<br>
+                        Un effort s'impose en:<br>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="table2_in">NJ</td>
+                    <td class="table2_in"></td>
+                    <td  colspan="8" rowspan="5" style="text-align: left; border: solid black; text-decoration: none; vertical-align: baseline ">
+
+
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Chemistry</div>
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                    
+                        
+                            
+                                <div style="color:red; border-bottom: solid black; width: 100%;"> &cross; Computer Studies</div>
+                            
+                        
+                    
+                        
+                    
+                
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+                        
+                    
+                
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Retenues/Punishments<br>en heures/in hours</td>
+                    <td class="table2_in"></td>
+                    <td class="table2_in" rowspan="4"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Avertissement<br>Serious Warnings</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Exclusion<br>Temp Suspension<br>en jours/days</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+                    <td class="table2_in" colspan="2">Motif</td>
+                    <td class="table2_in"></td>
+                </tr>
+                <tr>
+
+                </tr>
+            </table>
+            <table style="width: 100%; text-align: center; border-collapse: collapse; font-size:8px;">
+        <tr style="color: white; background-color: blue" >
+            <td class="table2_in" colspan="2">REMARK AND SIGNATURE OF CLASS MASTER<br>OBSERVATIONS ET VISA DU PROFESSEUR PRINCIPAL</td>
+        </tr>
+        <tr>
+            <td class="table2_in"  colspan="2"><textarea style="width: 100%; height: 30px;" ></textarea></td>
+        </tr>
+        <tr style="color: white; background: blue;" >
+            <td class="table2_in">REMARK AND SIGNATURE OF PARENT<br>OBSERVATIONS ET VISA DU PARENT</td>
+            <td class="table2_in">REMARK AND SIGNATURE OF PRINCIPAL <br>OBSERVATION ET VISA DU CHEF D'ETABLISSEMENT</td>
+        </tr>
+        <tr style="height: 20px;">
+            <td class="table2_in" style="height: 10px;"></td>
+            <td class="table2_in" style="height: 10px; text-align: left;">
+                <div style="border-bottom: solid black;margin-bottom:0%;"></div>
+                <div style="width: 50%; border-bottom: solid black;">DZENG,le</div>
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+        </div>
+
+        <p style="page-break-after: always;"></p>
+
+
+</body>
+
+</html>

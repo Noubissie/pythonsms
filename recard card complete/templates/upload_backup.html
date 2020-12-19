@@ -1,0 +1,310 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <link rel="stylesheet" href="{{ url_for('static',filename='upload.css')}}">#}
+{#    <title>result</title>#}
+{#</head>#}
+{#<body>#}
+{#    <div class="admin_nav_div1">#}
+{#                    <nav id="admin_navigation" class="admin_navigation">#}
+{##}
+{#                        <table style="width: 100%;background-color: rgb(50,50,60); color:white">#}
+{#                            <tr>#}
+{#                                <td><button  onclick="goback()" style="float: left; width: 100%; font-size: 20px"><div id="backbotton">&laquo;&laquo;&laquo;</div></button> </td>#}
+{#                                <script>#}
+{#                                    goback=() =>{#}
+{#                                        window.history.back()#}
+{#                                    }#}
+{#                                </script>#}
+{##}
+{#                                <td><a href="/" class='nav_anchor' rel="noopener noreferrer">Home<br>Base &triangledown; </a></td>#}
+{#                                <td><a href="/about_us" class='nav_anchor' rel="noopener noreferrer">About Us<br>Sous Nous &triangledown;</a></td>#}
+{#                                <td><a href='/student' class='nav_anchor' rel="noopener noreferrer">Result<br>Resulter &triangledown;</a></td>#}
+{#                                <td><button  onclick="goforward()" style="float: right; width: 100%; font-size: 20px"><div id="forwardbotton">&raquo;&raquo;&raquo;</div></button> </td>#}
+{#                                <script>#}
+{#                                    goforward=() =>{#}
+{#                                        window.history.forward()#}
+{#                                    }#}
+{#                                </script>#}
+{#                            </tr>#}
+{#                        </table>#}
+    {#                    {% endblock %}#}
+{#                    </nav>#}
+{#    </div>#}
+{##}
+{##}
+{#    <form  action="/report_database/{{name}}/{{clas}}" method="post" enctype="multipart/form-data">#}
+{##}
+{##}
+{#                    <table id="table3" >#}
+{#                            <tr>#}
+{#                                <td >class/classe:</td>#}
+{#                                <td>{{ clas }}</td>#}
+{#                            </tr>#}
+{#                            <tr>#}
+{#                                <td>Teacher name</td>#}
+{#                                <td>{{ name }}</td>#}
+{#                            </tr>#}
+{#                            <tr>#}
+{#                                <td>subject</td>#}
+{#                                <td><input type="text" name="subject" value="{{ subject }}"> </td>#}
+{#                            </tr>#}
+{#                            <tr>#}
+{#                                <td>Evaluation</td>#}
+{#                                <td><input  type="text" name="sequence" value="{{ sequence }}"></td>#}
+{#                            </tr>#}
+{#                        <tr>#}
+{#                            <td><label for="coefficient">coeff</label></td>#}
+{#                            <td><input min="1" required class="upload_input" style="width:98%" type="number" name="coefficient" min="0" id="coefficient"></td>#}
+{#                        </tr>#}
+                       {# <tr>
+{#                            <td><label for="mark">marks file</label></td>#}
+{#                            <td><input class="upload_input" type="file" name="marks_file" id="mark"></td>#}
+{#                        </tr>#}
+{##}
+{#                </table>#}
+{#                <table id="table_subject_and_mark" style="text-align: left">#}
+{#                        <thead>#}
+{#                        <tr>#}
+{#                            <td>Student Name/Nom</td>#}
+{#                            <td>Mark/Note/20</td>#}
+{#                            <td>Competence/Competence</td>#}
+{#                            <td style="width: 2%;" class="modifierMe">M</td>#}
+{#                        </tr>#}
+{#                        </thead>#}
+{#                        <tbody>#}
+{##}
+{#                            {% for student in student_data %}#}
+{#                                {% if student.student_class == clas %}#}
+{#                                    {% for i in range(length(student.pupils_name)) %}#}
+{#                                        {% if student.pupils_name[i].student_name == student.student_name and student.pupils_name[i].sequence == sequence and student.pupils_name[i].subject ==subject %}#}
+{#                                            <tr >#}
+{#                                                <td >#}
+{#                                                    <div style="display: block" id="{{student.pupils_name[i].student_name.replace("'","")}}">{{student.pupils_name[i].student_name}}</div>#}
+{#                                                    <div style="display: none" id="modifier{{student.student_name.replace("'","")}}"><input   name="student_name{{student.student_name}}" value="{{student.student_name}}"></div>#}
+{#                                                </td>#}
+{#                                                <td>#}
+{#                                                    <div style="display: block" id="{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].mark}}">{{ student.pupils_name[i].mark }}</div>#}
+{#                                                    <div style="display: none" id="modifier{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].mark}}"><input   class="upload_input" style="width:99%;" title="mark<=20" value="{{ student.pupils_name[i].mark }}" type="number" name="mark={{student.student_name}}" min="0" max="20"></div>#}
+{#                                                </td>#}
+{#                                                <td >#}
+{#                                                    <div style="display: block" id="{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].competence.replace("'","")[1:10]}}">{{student.pupils_name[i].competence}}</div>#}
+{#                                                    <div style="display: none" id="modifier{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].competence.replace("'","")[1:10]}}"><textarea  minlength="0" maxlength="450" class="upload_input" style="width:99%;" type="text" title="Competence developed during the term/not more than 450 letter" name="competence={{student.student_name}}">{{student.pupils_name[i].competence}}</textarea></div>#}
+{#                                                </td>#}
+{#                                                <td>#}
+{#                                                    <button type="button" id="modifierMe{{student.pupils_name[i].student_name}}" class="modifierMe" >X</button>#}
+{#                                                </td>#}
+{#                                            </tr>#}
+{##}
+{#                                           <script>#}
+{##}
+{#                                                    let modifierMe{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}} = document.getElementById("modifierMe{{student.pupils_name[i].student_name.replace("'","")}}");#}
+{#                                                    let name0{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}} = document.getElementById("{{student.pupils_name[i].student_name.replace("'","")}}");#}
+{#                                                    let mark{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}} = document.getElementById("{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].mark}}");#}
+{#                                                    let competence{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}} = document.getElementById("{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].competence.replace("'","")[1:10]}}");#}
+{##}
+{#                                                    let modifiername{{student.pupils_name[i].student_name.replace(' ','').replace('.','')}} = document.getElementById("modifier{{student.pupils_name[i].student_name.replace("'","")}}");#}
+{#                                                    let modifiermark{{student.pupils_name[i].student_name.replace(' ','').replace('.','')}} = document.getElementById("modifier{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].mark}}");#}
+{#                                                    let modifiercompetence{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}} = document.getElementById("modifier{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].competence.replace("'","")[1:10]}}");#}
+{##}
+{#                                                        modifierMe{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}}.addEventListener('click',(e)=>{#}
+{#                                                        name0{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}}.style.display = 'none';#}
+{#                                                        mark{{student.pupils_name[i].student_name.replace(' ','').replace('.','')}}.style.display = 'none';#}
+{#                                                        competence{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}}.style.display = 'none';#}
+{##}
+{#                                                        modifiername{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}}.style.display = 'block';#}
+{#                                                        modifiermark{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}}.style.display = 'block';#}
+{#                                                        modifiercompetence{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}}.style.display = 'block';#}
+{#                                                        e.preventDefault()#}
+{#                                                    })#}
+{#                                            </script>#}
+{#                                            {% break %}#}
+{#                                            {% elif i == length(student.pupils_name)-1 %}#}
+{#                                                <tr>#}
+{#                                                <td><input name="student_name{{student.student_name}}" value="{{student.student_name}}"></td>#}
+{#                                                <td><input class="upload_input" style="width:99%" title="mark<=20" type="number" name="mark={{student.student_name}}" min="0" max="20"></td>#}
+{#                                                <td><textarea class="upload_input" style="width:99%" minlength="0" maxlength="400" title="Competence developed during the term/not more than 400 letter" name="competence={{student.student_name}}"></textarea></td>#}
+{#                                            </tr>#}
+{#                                        {% endif %}#}
+{#                                        {% endfor %}#}
+{#                                        {% if length(student.pupils_name) == 0 %}#}
+{#                                            <tr>#}
+{#                                                <td><input name="student_name{{student.student_name}}" value="{{student.student_name}}"></td>#}
+{#                                                <td><input class="upload_input" style="width:99%" title="mark<=20" type="number" name="mark={{student.student_name}}" min="0" max="20"></td>#}
+{#                                                <td><textarea class="upload_input" style="width:99%" type="text" title="Competence developed during the term" name="competence={{student.student_name}}" minlength="0" maxlength="450"></textarea></td>#}
+{#                                            </tr>#}
+{#                                        {% endif %}#}
+{##}
+{#                                {% endif %}#}
+{#                            {% endfor %}#}
+{##}
+{#                        </tbody>#}
+{#                </table>#}
+{#        <div id="upload_container2">#}
+{#                <input type="submit" value="submit">#}
+{#            </div>#}
+{#    </form>#}
+{#</body>#}
+{#</html>#}
+{##}
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static',filename='upload.css')}}">
+    <title>result</title>
+</head>
+<body>
+    <div class="admin_nav_div1">
+                    <nav id="admin_navigation" class="admin_navigation">
+
+                        <table style="width: 100%;background-color: rgb(50,50,60); color:white">
+                            <tr>
+                                <td><button  onclick="goback()" style="float: left; width: 100%; font-size: 20px"><div id="backbotton">&laquo;&laquo;&laquo;</div></button> </td>
+                                <script>
+                                    goback=() =>{
+                                        window.history.back()
+                                    }
+                                </script>
+
+                                <td><a href="/" class='nav_anchor' rel="noopener noreferrer">Home/Base &triangledown; </a></td>
+                                <td><a href="/about_us" class='nav_anchor' rel="noopener noreferrer">About Us/Sous Nous &triangledown;</a></td>
+    {#                            <td><a href="/result"class='nav_anchor' rel="noopener noreferrer">Result &triangledown;</a></td>#}
+                                <td><a href='/student' class='nav_anchor' rel="noopener noreferrer">Result/Resulter &triangledown;</a></td>
+    {#                            <td><a href='/registration' class='nav_anchor' rel="noopener noreferrer">Register &triangledown;</a></td>#}
+                                <td id="change-background-colors" class='nav_anchor'><input type="color" id="change-background-color" ></td>
+                                <td><button  onclick="goforward()" style="float: right; width: 100%; font-size: 20px"><div id="forwardbotton">&raquo;&raquo;&raquo;</div></button> </td>
+                                <script>
+                                    goforward=() =>{
+                                        window.history.forward()
+                                    }
+                                </script>
+                            </tr>
+                        </table>
+    {#                    {% endblock %}#}
+                    </nav>
+    </div>
+
+
+    <form  action="/report_database/{{name}}/{{clas}}" method="post" enctype="multipart/form-data">
+
+
+                    <table id="table3" >
+                            <tr>
+                                <td >class/classe:</td>
+                                <td>{{ clas }}</td>
+                            </tr>
+                            <tr>
+                                <td>Teacher name</td>
+                                <td>{{ name }}</td>
+                            </tr>
+                            <tr>
+                                <td>subject</td>
+                                <td><input type="text" name="subject" value="{{ subject }}"> </td>
+                            </tr>
+                            <tr>
+                                <td>sequence</td>
+                                <td><input  type="text" name="sequence" value="{{ sequence }}"></td>
+                            </tr>
+                        <tr>
+                            <td><label for="coefficient">coeff</label></td>
+                            <td><input min="1" required class="upload_input" style="width:98%" type="number" name="coefficient" min="0" id="coefficient"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mark">marks file</label></td>
+                            <td><input class="upload_input" type="file" name="marks_file" id="mark"></td>
+                        </tr>
+
+                </table>
+                <table id="table_subject_and_mark" style="text-align: left">
+                        <thead>
+                        <tr>
+                            <td>Student Name/Nom</td>
+                            <td>Mark/Note/20</td>
+                            <td>Competence/Competence</td>
+                            <td style="width: 2%;" class="modifierMe">M</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                            {% for student in student_data %}
+                                {% if student.student_class == clas %}
+                                    {% for i in range(length(student.pupils_name)) %}
+                                        {% if student.pupils_name[i].student_name == student.student_name and student.pupils_name[i].sequence == sequence and student.pupils_name[i].subject ==subject %}
+                                            <tr >
+                                                <td >
+                                                    <div style="display: block" id="{{student.pupils_name[i].student_name.replace("'","")}}">{{student.pupils_name[i].student_name}}</div>
+                                                    <div style="display: none" id="modifier{{student.student_name.replace("'","")}}"><input   name="student_name{{student.student_name}}" value="{{student.student_name}}"></div>
+                                                </td>
+                                                <td>
+                                                    <div style="display: block" id="{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].mark}}">{{ student.pupils_name[i].mark }}</div>
+                                                    <div style="display: none" id="modifier{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].mark}}"><input   class="upload_input" style="width:99%;" title="mark<=20" value="{{ student.pupils_name[i].mark }}" type="number" name="mark={{student.student_name}}" min="0" max="20"></div>
+                                                </td>
+                                                <td >
+                                                    <div style="display: block" id="{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].competence.replace("'","")}}">{{student.pupils_name[i].competence}}</div>
+                                                    <div style="display: none" id="modifier{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].competence.replace("'","")}}"><textarea  minlength="0" maxlength="450" class="upload_input" style="width:99%;" type="text" title="Competence developed during the term/not more than 450 letter" name="competence={{student.student_name}}">{{student.pupils_name[i].competence}}</textarea></div>
+                                                </td>
+                                                <td>
+                                                    <button type="button" id="modifierMe{{student.pupils_name[i].student_name}}" class="modifierMe" >X</button>
+                                                </td>
+                                            </tr>
+
+                                           <script>
+
+                                                    let modifierMe{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}} = document.getElementById("modifierMe{{student.pupils_name[i].student_name.replace("'","")}}");
+                                                    let name0{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}} = document.getElementById("{{student.pupils_name[i].student_name.replace("'","")}}");
+                                                    let mark{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}} = document.getElementById("{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].mark}}");
+                                                    let competence{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}} = document.getElementById("{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].competence.replace("'","")}}");
+
+                                                    let modifiername{{student.pupils_name[i].student_name.replace(' ','').replace('.','')}} = document.getElementById("modifier{{student.pupils_name[i].student_name.replace("'","")}}");
+                                                    let modifiermark{{student.pupils_name[i].student_name.replace(' ','').replace('.','')}} = document.getElementById("modifier{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].mark}}");
+                                                    let modifiercompetence{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}} = document.getElementById("modifier{{student.pupils_name[i].student_name.replace("'","")}}{{student.pupils_name[i].competence.replace("'","")}}");
+
+                                                        modifierMe{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}}.addEventListener('click',(e)=>{
+                                                        name0{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}}.style.display = 'none';
+                                                        mark{{student.pupils_name[i].student_name.replace(' ','').replace('.','')}}.style.display = 'none';
+                                                        competence{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}}.style.display = 'none';
+
+                                                        modifiername{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}}.style.display = 'block';
+                                                        modifiermark{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}}.style.display = 'block';
+                                                        modifiercompetence{{student.pupils_name[i].student_name.replace(' ','').replace('.','').replace("'",'')}}.style.display = 'block';
+                                                        e.preventDefault()
+                                                    })
+                                            </script>
+                                            {% break %}
+                                            {% elif i == length(student.pupils_name)-1 %}
+                                                <tr>
+                                                <td><input name="student_name{{student.student_name}}" value="{{student.student_name}}"></td>
+                                                <td><input class="upload_input" style="width:99%" title="mark<=20" type="number" name="mark={{student.student_name}}" min="0" max="20"></td>
+                                                <td><textarea class="upload_input" style="width:99%" minlength="0" maxlength="400" title="Competence developed during the term/not more than 400 letter" name="competence={{student.student_name}}"></textarea></td>
+                                            </tr>
+                                        {% endif %}
+                                        {% endfor %}
+                                        {% if length(student.pupils_name) == 0 %}
+                                            <tr>
+                                                <td><input name="student_name{{student.student_name}}" value="{{student.student_name}}"></td>
+                                                <td><input class="upload_input" style="width:99%" title="mark<=20" type="number" name="mark={{student.student_name}}" min="0" max="20"></td>
+                                                <td><textarea class="upload_input" style="width:99%" type="text" title="Competence developed during the term" name="competence={{student.student_name}}" minlength="0" maxlength="450"></textarea></td>
+                                            </tr>
+                                        {% endif %}
+
+                                {% endif %}
+                            {% endfor %}
+
+                        </tbody>
+                </table>
+        <div id="upload_container2">
+                <input type="submit" value="submit">
+            </div>
+    </form>
+</body>
+</html>

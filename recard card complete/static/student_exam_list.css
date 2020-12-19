@@ -1,0 +1,80 @@
+.nav_anchor{
+    border:solid black;
+    text-decoration: none;
+    list-style: none;
+    color:white;
+}
+
+/*
+back and forward button
+ */
+
+.admin_nav_div1{
+    margin: 2% 0% 0% 0%;
+    padding:0% 0% 2% 0%;
+    color:white;
+    width: 100%;
+    background-color: rgba(50,50,50,1);
+}
+.nav_anchor{
+    border:solid black;
+    text-decoration: none;
+    color: white;
+
+}
+#backbotton:hover{
+    -webkit-animation-name: backbutton;
+    -moz-animation-name: backbutton;
+    -o-animation-name: backbutton;
+    animation-name: backbutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes backbutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+        transform: translateX(-100px);}
+}
+#forwardbotton:hover{
+    -webkit-animation-name: forwabutton;
+    -moz-animation-name: forwabutton;
+    -o-animation-name: forwabutton;
+    animation-name: forwabutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes forwabutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+        transform: translateX(100px);}
+}

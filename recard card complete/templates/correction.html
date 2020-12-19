@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>correction</title>
+</head>
+<body>
+    <table style="border-collapse:collapse">
+        <tr>
+                <td style="border:solid; border-color:blue;font-size:10px; width:50px" colspan="10">classe</td>
+                <td style="border:solid; border-color:blue;font-size:10px; width:50px" colspan="10"><h3>{{clas}}</h3></td>
+            </tr>
+            <tr>
+                <td style="border:solid; border-color:blue;font-size:10px" colspan="10">evaluation</td>
+                <td style="border:solid; border-color:blue;font-size:10px" colspan="10"><h1>{{seq}}</h1></td>
+            </tr>
+    </table>
+    <table style="border-collapse:collapse">
+        <thead>
+        <tr >
+            <td style="width:160px; border:solid; border-color:blue;">student name</td>
+            {% for subject in subjects %}
+                <td style="border:solid; border-color:blue;font-size:10px">{{subject}}</td>
+            {% endfor %}
+        </tr>
+
+
+
+        </thead>
+
+            {% for student in students %}
+                <tr>
+                    <td style="border:solid; border-color:blue;" >{{student.student_name}}</td>
+                    {% for j in range(subjects|length)%}
+
+                        {% if subjects[j].upper().strip() in spsd[student.student_name] %}
+                         {% for i in range(marks|length) %}
+
+                            {% if marks[i].student_name == student.student_name %}
+
+                                        {% if subjects[j].upper().strip() == marks[i].subject.upper().strip() %}
+                                            {# <td style="border:solid; border-color:blue;">{{marks[i].staff_name,marks[i].coefficient, marks[i].mark}}</td> #}
+                                            <td style="border:solid; border-color:blue;">{{marks[i].mark}}</td>
+                                        {{break}}
+                                        {% endif %}
+
+                            {% endif %}
+                        {% endfor %}
+                    {% else %}
+                        <td style="border:solid; border-color:blue;"> </td>
+                    {% endif %}
+
+                    {% endfor %}
+
+                </tr>
+            {% endfor %}
+
+    </table>
+</body>
+</html>

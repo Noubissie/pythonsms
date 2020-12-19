@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .blue{
+    color:blue;
+    margin: 5px;:
+    border:solid black 10px;
+}
+.blue:nth-child(even){
+    background-color: blue;
+    color: white;
+    /*border: solid black 10px;*/
+}
+.fail{
+    color: red;
+}
+
+#report_container{
+     border: solid 5px blue;
+    height: 100%;
+    margin: 5% 1% 5% 1%;
+}
+#student_name_span{
+    border: solid blue;
+}
+#sequence{
+    text-align: center;
+    /*border: solid black;*/
+}
+#sh1{
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    color: white;background-color:blue;
+    /*width: fit-content;*/
+    border: solid blue;
+}
+#table-container{
+    border: solid blue;
+    width: 100%;
+
+    border-collapse: collapse;
+    ;
+}
+#tableaverage{
+    width: 100%;
+    border: blue 30px;
+    margin-top: 3%;
+}
+.rotate{
+    transform: rotateX(90deg);
+}
+#student_name{
+    border: solid blue;
+    width: 100%;
+    padding: 2%;
+    text-align: left;
+}
+
+@media print{
+    #print_button{
+    display: none;
+}
+    #backbotton{
+        display:none
+    }
+    #backbotton{
+        display: none;
+    }
+    #forwardbotton{
+        display: none;
+    }
+    .blue:nth-child(even){
+        background-color:blue ;
+        border: solid blue 2px;
+        color: blue;
+}
+    }
+
+.table2_in{
+    padding: 1%;
+    border: solid black;
+}
+.admin_nav_div1{
+    margin: 2% 0% 0% 0%;
+    padding:0% 0% 2% 0%;
+    color:white;
+    width: 100%;
+    background-color: rgba(50,50,50,1);
+}
+.nav_anchor{
+    border:solid black;
+    text-decoration: none;
+    color: white;
+
+}
+#backbotton:hover{
+    -webkit-animation-name: backbutton;
+    -moz-animation-name: backbutton;
+    -o-animation-name: backbutton;
+    animation-name: backbutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes backbutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+        transform: translateX(-100px);}
+}
+#forwardbotton:hover{
+    -webkit-animation-name: forwabutton;
+    -moz-animation-name: forwabutton;
+    -o-animation-name: forwabutton;
+    animation-name: forwabutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes forwabutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+        transform: translateX(100px);}
+
+    </style>
+
+</head>
+<body style="margin:0px">
+
+
+        <div >
+            <div id="report_container">
+
+                <table id="student_name" >
+                    <thead>
+
+                        <tr style="padding: 2%;">
+                            <td style="width: 20%; ">Name/Noms:</td>
+                            <td style="border-bottom: solid blue; padding: 1%;">AKONO BOLO BONIFACE GOTHARD</td>
+                        </tr>
+                        <tr>
+                            <td>Academic Year/Annee scolaire:</td>
+                            <td style="border-bottom: solid blue; padding: 1%;">2019/2020</td>
+                        </tr>
+
+                    </thead>
+                </table>
+
+                <div id="sequence">
+                    <span id="sh1" >First term|Premiere tremestre<sup></sup>  EVALUATION</span>
+                </div>
+
+                <table border="solid" id="table-container">
+                    <thead style="color: rgb(50,50,50);text-align:center;">
+                    <tr>
+                        <td>Subject<br>Discipline</td>
+                        <td>Mark/20<br>Note/20</td>
+                        <td>coeff</td>
+                        <td>N*coeff</td>
+                        <td>Posit</td>
+                        <td>Competence</td>
+                        <td>Teacher's Appreciation<br>Appreciation des professeurs</td>
+                        <td>Teacher/Professeur</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                            
+                                
+                            
+                                
+                                <tr>
+                                    <td>Chemistry</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                        <td style="color: red">9.0</td>
+                                                        <td style="color: red">3</td>
+                                                        <td style="color: red;">27.0</td>
+                                                        <td style="color:red">1</td>
+                                                        <td style="color: red;">//</td>
+
+                                                            
+                                                                <td style="color: red;">not Acquired</td>
+                                                            
+                                                        <td style="color: red;">mbangsi</td>
+
+                                                        
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Biology</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                        <td style="color: red">9.0</td>
+                                                        <td style="color: red">3</td>
+                                                        <td style="color: red;">27.0</td>
+                                                        <td style="color:red">1</td>
+                                                        <td style="color: red;">-How to care for and prevent diseases in the reproductive organs.-Responsible sexual behaviour.-How to ensure successful multiplication of living organisms.</td>
+
+                                                            
+                                                                <td style="color: red;">not Acquired</td>
+                                                            
+                                                        <td style="color: red;">mukong</td>
+
+                                                        
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Mathematics</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">13.0</td>
+                                                            <td style="color: black">4</td>
+                                                            <td style="color: black">52.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">computing the banking and loan problems with the aid of sequences and series*construction of geometric figures and bridges and calculation of areas and volumes of stability</td>
+                                                            
+                                                                    <td style="color: black;">Ongoing Acquisition</td>
+                                                                
+                                                                <td>noubissie</td>
+                                                            
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                            
+                                
+                                <tr>
+                                    <td>English Language</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                        <td style="color: red">9.0</td>
+                                                        <td style="color: red">4</td>
+                                                        <td style="color: red;">36.0</td>
+                                                        <td style="color:red">1</td>
+                                                        <td style="color: red;">*ReadingReading</td>
+
+                                                            
+                                                                <td style="color: red;">not Acquired</td>
+                                                            
+                                                        <td style="color: red;">ndonwi</td>
+
+                                                        
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                            
+                                
+                                <tr>
+                                    <td>French</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">12.5</td>
+                                                            <td style="color: black">3</td>
+                                                            <td style="color: black">37.5</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">Vie familiale et intégration socialeVie familiale et intégration sociale</td>
+                                                            
+                                                                    <td style="color: black;">Ongoing Acquisition</td>
+                                                                
+                                                                <td>tamon</td>
+                                                            
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Manual Labour</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">14.0</td>
+                                                            <td style="color: black">1</td>
+                                                            <td style="color: black">14.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">Ability to carry out manual workAbility to carry out manual work</td>
+                                                            
+                                                                    <td style="color: black;">Ongoing Acquisition</td>
+                                                                
+                                                                <td>eneke</td>
+                                                            
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Physical Education</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                        <td style="color: red">0.0</td>
+                                                        <td style="color: red">2</td>
+                                                        <td style="color: red;">0.0</td>
+                                                        <td style="color:red">1</td>
+                                                        <td style="color: red;">Réaliser une performance motrice maximale mesurable à une échéance donnéeRéaliser une performance motrice maximale mesurable à une échéance donnée</td>
+
+                                                            
+                                                                <td style="color: red;">not Acquired</td>
+                                                            
+                                                        <td style="color: red;">ngoh</td>
+
+                                                        
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Computer Studies</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                        <td style="color: red">7.0</td>
+                                                        <td style="color: red">3</td>
+                                                        <td style="color: red;">21.0</td>
+                                                        <td style="color:red">1</td>
+                                                        <td style="color: red;">Appreciate and use programming tools.Appreciate the existence and functioning of a database.</td>
+
+                                                            
+                                                                <td style="color: red;">not Acquired</td>
+                                                            
+                                                        <td style="color: red;">dingbobga</td>
+
+                                                        
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+                                
+                                <tr>
+                                    <td>Citizenship Education</td>
+                                    
+
+                                        
+
+
+                                                    
+
+                                                            <td style="color: black">13.0</td>
+                                                            <td style="color: black">3</td>
+                                                            <td style="color: black">39.0</td>
+                                                            <td>1</td>
+                                                            <td style="color: black">In the course of acquiringAcquired</td>
+                                                            
+                                                                    <td style="color: black;">Ongoing Acquisition</td>
+                                                                
+                                                                <td>fuanji</td>
+                                                            
+
+                                        
+                                    
+                                </tr>
+                            
+                            
+
+                    </tbody>
+                </table>
+
+            <table border="solid" id="tableaverage">
+                <tfoot>
+            
+                
+
+                    
+                        
+                                <tr >
+                                    <td style="width: 20%;">Total</td>
+                                    <td class="fail">253.5</td>
+                                    <td rowspan="3" style="text-align: center">posit</td>
+                                    <td class="fail" rowspan="3" style="text-align: center">1/1</td>
+                                </tr>
+
+                                <tr>
+                                    <td style="width: 20%;">Moyenne sequential<br>sequence average</td>
+
+                                    <td class="fail">9.73/20</td>
+
+                                </tr>
+                                <tr>
+                                    <td style="width: 20%;">Moyenne General De La Classe<br>
+                                    class average</td>
+                                    <td class="fail">9.73</td>
+                                </tr>
+                                            
+                
+                </tfoot>
+            </table>
+            </div>
+        </div>
+
+        <p style="page-break-after: always;"></p>
+
+
+</body>
+
+</html>

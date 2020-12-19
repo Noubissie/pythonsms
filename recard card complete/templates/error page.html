@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>error</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='error_page.css')}}">
+
+</head>
+<body>
+<div class="admin_nav_div1">
+                <nav id="admin_navigation" class="admin_navigation">
+{#                    {% block result %}#}
+                    <table style="width: 100%;background-color: black; color:white">
+                        <tr>
+                            <td><button  onclick="goback()" style="float: left; width: 100%; font-size: 20px"><div id="backbotton">&laquo;&laquo;&laquo;</div></button> </td>
+                            <script>
+                                goback=() =>{
+                                    window.history.back()
+                                }
+                            </script>
+                            <td><a href="/" class='nav_anchor' rel="noopener noreferrer">Home/Base &triangledown; </a></td>
+                            <td><a href="/about_us" class='nav_anchor' rel="noopener noreferrer">About Us/Sous Nous &triangledown;</a></td>
+{#                            <td><a href="/result"class='nav_anchor' rel="noopener noreferrer">Result &triangledown;</a></td>#}
+                            <td><a href='/student' class='nav_anchor' rel="noopener noreferrer">Result/Resulter &triangledown;</a></td>
+{#                            <td><a href='/registration' class='nav_anchor' rel="noopener noreferrer">Register &triangledown;</a></td>#}
+                            <td id="change-background-colors" class='nav_anchor'><input type="color" id="change-background-color" ></td>
+                            <td><button  onclick="goforward()" style="float: right; width: 100%; font-size: 20px"><div id="forwardbotton">&raquo;&raquo;&raquo;</div></button> </td>
+                            <script>
+                                goforward=() =>{
+                                    window.history.forward()
+                                }
+                            </script>
+                        </tr>
+                    </table>
+
+                </nav>
+</div>
+<h1 class="error_control" style="display:{{ term_error_no_mark_ready }}" ><div style="color:red;">{{ evaluation }} Term mark is absent:: Result not Ready</div> </h1>
+
+<h1 class="error_control" style="display:{{ no_mark_ready }}" ><div style="color:red;">{{ evaluation }} evaluation average and position couldn't be calculated:: Result not Ready</div> </h1>
+<h1 class="error_control" style="display:{{ registration_error}}" ><div style="color:red;"></div> registration error</h1>
+<h1 class="error_control" style="display:{{ already_register}}" ><div style="color:red;">This name already exits:contact</div>
+    <div style="width: 100%">TEL:: <a href="tel:237678201252">+237678201252</a></div>
+    <div style="width: 100%"> Whatsapp::<a href="https://api.whatsapp.com/send?phone=237678201252">whatsapp</a></div>
+</h1>
+<h1 class="error_control" style="display:{{admin_error}}" ><div style="color:red;">ADMIN has made as input</div> </h1>
+<h1 class="error_control" style="display:{{name_error}}" ><div style="color:red; width: 100%"> {{ name }}:this name is not a member of Lycee bilingue de Dzeng</div></h1>
+<h1 class="error_control" style="display:{{error_storing_result}}" ><div style="color:red;">error while storing result::</div> <br>
+Note:: the result may have been stored or not stored check the marks table for confirmation</h1>
+<h1 class="error_control" style="display:{{ evaluation_has_not_been_inputed }}" ><div style="color:red;"></div> evaluation has not been inputed by admin</h1>
+<h1 class="error_control" style="display:{{ about_us }}" ><div style="color:red;"><i> No school information present</i></div></h1>
+<h1 class="error_control" style="display:{{ class_info }}" ><div style="color:red;"><i>class not present</i></div></h1>
+
+<div style="color:red; text-align: center;">INPUT ERROR</div>
+</body>
+</html>

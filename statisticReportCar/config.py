@@ -1,0 +1,3 @@
+SQLALCHEMY_DATABASE_URI = "mysql://NOUBISSIE:n678201252l@localhost/NOUBISSIE$school_database"
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+SQLALCHEMY_BINDS = {"one":"mysql://NOUBISSIE:n678201252l@localhost/school_database"}

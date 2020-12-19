@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'staff.css')}}">
+
+    <title>class_upload</title>
+</head>
+<body>
+
+    <table class="table">
+        <thead>
+            <tr style="width: 100%;background-color: black; color:white">
+                <td><button  onclick="goback()" style="float: left;width: 100%; font-size: 20px"><div id="backbotton">&laquo;&laquo;&laquo;</div></button> </td>
+                <script>
+                    goback=() =>{
+                        window.history.back()
+                    }
+                </script>
+                <td><a href="/" class='nav_anchor' rel="noopener noreferrer">Home/Base &triangledown; </a></td>
+                <td><a href="/about_us" class='nav_anchor' rel="noopener noreferrer">About Us &triangledown;</a></td>
+{#                            <td><a href="/result"class='nav_anchor' rel="noopener noreferrer">Result &triangledown;</a></td>#}
+                <td><a href='/student' class='nav_anchor' rel="noopener noreferrer">Result &triangledown;</a></td>
+{#                            <td><a href='/registration' class='nav_anchor' rel="noopener noreferrer">Register &triangledown;</a></td>#}
+{#                            <td id="change-background-colors" class='nav_anchor'><input type="color" id="change-background-color" ></td>#}
+                <td><button  onclick="goforward()" style="float: right; width: 100%; font-size: 20px"><div id="forwardbotton">&raquo;&raquo;&raquo;</div></button> </td>
+                <script>
+                    goforward=() =>{
+                        window.history.forward()
+                    }
+                </script>
+            </tr>
+            <tr style="background-color: limegreen;">
+                <td>class</td>
+                <td> subject</td>
+                <td>sequence</td>
+                <td>number of student</td>
+                <td>school year</td>
+{#                <td>N<sup>o</sup> of student/N<sup>o</sup> des etudien</td>#}
+{#                <td>N<sup>o</sup> boy/Garcon</td>#}
+            </tr>
+        </thead>
+    <tbody>
+
+        {% for i in range(length(jsonl(staff_info.class_thought))) %}
+
+                <form action="/student_result_upload/{{name}}/{{jsonl(staff_info.class_thought)[i]}}" method="post">
+            <tr>
+                <td><input type="submit" style="color: blue" value="{{jsonl(staff_info.class_thought)[i]}}"></td>
+                    <td>
+                            <select required class="upload_input" name="subject{{jsonl(staff_info.class_thought)[i]}}"  id="subject1">
+                                <option></option>
+                                {% for subject in jsonl(staff_info.subject_thought)[i] %}
+
+                                    <option>{{ subject}}</option>
+
+                                {% endfor %}
+                            </select>
+
+                    </td>
+                    <td>
+                            <select required class="upload_input" name="sequence{{jsonl(staff_info.class_thought)[i]}}"  id="subject1">
+                                <option></option>
+                                {% for seq in sequence %}
+
+                                    <option>{{ seq.sequence}}</option>
+
+                                {% endfor %}
+                            </select>
+
+                    </td>
+
+                <td>{{ length(student_amount(jsonl(staff_info.class_thought)[i])) }}</td>
+                <td>{{ staff_info.staff_in.school_year }}</td>
+
+            </tr>
+                </form>
+
+        {% endfor %}
+    </tbody>
+    </table>
+
+
+</body>
+</html>

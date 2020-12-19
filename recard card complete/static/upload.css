@@ -1,0 +1,127 @@
+body{
+    background-color: lightskyblue;
+    border: black;
+}
+.admin_nav_div1{
+    border: black;
+    margin: 0% 0% 0% 0%;
+    padding:2% 0% 2% 0%;
+    color:white;
+    width: 100%;
+    border: outset;
+    background-color: rgba(50,50,50,1);
+}
+.nav_anchor{
+    border:solid black;
+    text-decoration: none;
+    color: white;
+
+}
+#table_subject_and_mark{
+    border-collapse: collapse;
+}
+
+#table_subject_and_mark td{
+    border: outset black;
+
+
+}
+#upload_container2{
+    border:black;
+    text-align: center;
+    height: 100%;
+
+}
+#table1{
+    text-align: left;
+    border-collapse: collapse;
+    /*background: green;*/
+    width: 100%;
+
+
+}
+.modifierMe{
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;border-radius: 100%; background: rgba(50,50,50,0.5);
+    color: black;
+}
+#table3 {
+    margin: 3% 0 3% 0;
+    width: 100%;
+    text-align: left;
+
+}
+#table3 tr:nth-child(odd){
+    color: white;
+    background-color: #52805b;
+    border: outset;
+
+}
+
+#table_subject_and_mark{
+    width: 100%;
+}
+label, thead{
+    font-size: 20px;
+}
+.upload_input{
+    width:100%;
+}
+
+
+#backbotton:hover{
+    -webkit-animation-name: backbutton;
+    -moz-animation-name: backbutton;
+    -o-animation-name: backbutton;
+    animation-name: backbutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes backbutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+        transform: translateX(-100px);}
+}
+#forwardbotton:hover{
+    -webkit-animation-name: forwabutton;
+    -moz-animation-name: forwabutton;
+    -o-animation-name: forwabutton;
+    animation-name: forwabutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes forwabutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+        transform: translateX(100px);}
+}

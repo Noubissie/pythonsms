@@ -1,0 +1,224 @@
+{% extends 'administrator.html' %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='about_us.css') }}">
+{% endblock %}
+    {% block title %}
+        <title>About us</title>
+    {% endblock %}
+
+{% block form %}
+{% endblock %}
+{% block content %}
+{% block endform %}
+{% endblock %}
+
+    <div id="school_information">
+        <table border="solid" class="admin_table1">
+            <thead>
+                <tr>
+                    <td><span>school section</span></td>
+                    <td><span>class</span></td>
+                    <td><span>subject tought</span></td>
+                </tr>
+            </thead>
+            {% for i in n %}
+                    <tr>
+                        <td><span>{{ i.school_section }}</span></td>
+                        <td><span>{{ i.classs }}</span></td>
+                        <td>
+                            {% for subject in jsonl(i.subject_thought) %}
+                                <div style="border: outset;padding: 4px;margin: 4px;">&star;{{ subject }}</div>
+                            {% endfor %}
+                        </td>
+                    </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+
+
+    <div id="staff_information">
+        <table border="solid" class="admin_table1">
+                    <tr>
+                        <td>ANGLOPHONE SECTION</td>
+                        <td>
+                            <table class="table_about_us" style="width: 100%">
+                                <tr style="width: 100%; border:solid">
+                                    <td style="border: solid"><span>staff name</span></td>
+                                    <td style="border: solid"><span>school year</span></td>
+                                    <td style="border: solid"><span>post</span></td>
+                                    <td style="border: solid"><span>class taught</span></td>
+                                    <td style="border: solid"><span>subject taught</span></td>
+                                </tr>
+                                {% for i in staff_infolog %}
+                                    {% if i.staff_in.staff_section == 'Anglophone Section' %}
+                                        <tr>
+                                            <td><span>{{ i.staff_name }}</span></td>
+                                            <td><span>{{ i.staff_in.school_year }}</span></td>
+                                            <td><spn>{{ i.staff_in.rank }}</spn></td>
+                                            <td colspan="2">
+                                            <table class="table2_about_us" style="width: 100%">
+                                            {% for j in range(length(jsonl(i.class_thought))) %}
+                                                <tr>
+                                                    <td style="width: 50%"><div >{{jsonl(i.class_thought)[j]}}</div></td>
+                                                    <td>
+                                                        {% for k in jsonl(i.subject_thought)[j] %}
+                                                            <div >&plus;{{ k }}</div>
+                                                        {% endfor %}
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
+                                            </table>
+                                            </td>
+
+                                        </tr>
+                                    {% endif %}
+                                {% endfor %}
+                            </table>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td> FRANCOPHONE SECTION</td>
+                        <td>
+                            <table class="table_about_us" style="width: 100%">
+                                <tr style="width: 100%; border:solid">
+                                    <td style="border: solid"><span>staff name</span></td>
+                                    <td style="border: solid"><span>school year</span></td>
+                                    <td style="border: solid"><span>post</span></td>
+                                    <td style="border: solid"><span>class taught</span></td>
+                                    <td style="border: solid"><span>subject taught</span></td>
+                                </tr>
+                                {% for i in staff_infolog %}
+                                    {% if i.staff_in.staff_section == 'Francophone Section' %}
+                                        <tr>
+                                            <td><span>{{ i.staff_name }}</span></td>
+                                            <td><span>{{ i.staff_in.school_year }}</span></td>
+                                            <td><spn>{{ i.staff_in.rank }}</spn></td>
+                                            <td colspan="2">
+                                            <table class="table2_about_us" style="width: 100%">
+                                            {% for j in range(length(jsonl(i.class_thought))) %}
+                                                <tr>
+                                                    <td style="width: 50%"><div >{{jsonl(i.class_thought)[j]}}</div></td>
+                                                    <td>
+                                                        {% for k in jsonl(i.subject_thought)[j] %}
+                                                            <div >&plus;{{ k }}</div>
+                                                        {% endfor %}
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
+                                            </table>
+                                            </td>
+
+                                        </tr>
+                                    {% endif %}
+                                {% endfor %}
+                            </table>
+                        </td>
+                    </tr>
+        </table>
+
+    </div>
+
+
+    <div id="student_information">
+        <table border="solid" class="admin_table1">
+        <tr>
+            <td>FRANCOPHONE SECTION</td>
+            <td>
+                <table style="width: 100%">
+                    {% for i in n %}
+                    {% if i.school_section == 'Francophone Section' %}
+                        <tr>
+                            <td>{{ i.classs }}</td>
+                            <td style="border: solid">
+                                <table class="table_student1" style="width: 100%">
+                                    <thead>
+                                            <tr>
+                                                <td style="border: solid"><span>student name</span></td>
+                                                <td style="border: solid"><span>student school year</span></td>
+                                                <td style="border: solid"><span>student date of birth</span></td>
+                                                <td style="border: solid"><span >student age</span></td>
+                                                <td style="border: solid"><span>sex</span></td>
+                                                <td style="border: solid"><span >student guidant</span></td>
+                                            </tr>
+                                    </thead>
+                                    {% for j in student_infolog %}
+                                            {% if j.student_section == i.school_section and j.student_class==i.classs %}
+                                            <tr >
+                                                <td><span >{{ j.student_name }}</span></td>
+                                                <td><span>{{ j.student_school_year }}</span></td>
+                                                <td><span >{{ j.student_date_of_birth }}</span></td>
+                                                <td><span >{{ j.student_age }}</span></td>
+                                                <td><span >{{ j.student_sex }}</span></td>
+                                                <td><span >{{ j.student_guidant }}</span></td>
+                                            </tr>
+                                            {% endif %}
+                                        {% endfor %}
+                                </table>
+                            </td>
+
+
+                        </tr>
+                    {% endif %}
+                    {% endfor %}
+                </table>
+
+            </td>
+        </tr>
+        <tr>
+            <td>ANGLOPHONE SECTION</td>
+            <td>
+                <table style="width: 100%">
+                    {% for i in n %}
+                    {% if i.school_section == 'Anglophone Section' %}
+                        <tr>
+                            <td>{{ i.classs }}</td>
+                            <td style="border: solid">
+                                <table class="table_student1" style="width: 100%">
+                                    <thead>
+                                            <tr>
+                                                <td style="border: solid"><span>student name</span></td>
+                                                <td style="border: solid"><span>student school year</span></td>
+                                                <td style="border: solid"><span>student date of birth</span></td>
+                                                <td style="border: solid"><span >student age</span></td>
+                                                <td style="border: solid"><span>sex</span></td>
+                                                <td style="border: solid"><span >student guidant</span></td>
+                                            </tr>
+                                    </thead>
+                                    {% for j in student_infolog %}
+                                            {% if j.student_section == i.school_section and j.student_class==i.classs %}
+                                            <tr >
+                                                <td><span >{{ j.student_name }}</span></td>
+                                                <td><span>{{ j.student_school_year }}</span></td>
+                                                <td><span >{{ j.student_date_of_birth }}</span></td>
+                                                <td><span >{{ j.student_age }}</span></td>
+                                                <td><span >{{ j.student_sex }}</span></td>
+                                                <td><span >{{ j.student_guidant }}</span></td>
+                                            </tr>
+                                            {% endif %}
+                                        {% endfor %}
+                                </table>
+                            </td>
+
+
+                        </tr>
+                    {% endif %}
+                    {% endfor %}
+                </table>
+
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div id="themes">
+        <label for="number-of-themes" class="label">number of themes<br>
+            <input type="number" id="number-of-themes" name="number-of-themes">
+        </label>
+    </div>
+    {% block script %}
+        <script type= "text/javascript" src= "{{ url_for('static',filename='js/about_us.js') }}" ></script>
+        {% endblock %}
+{% endblock %}
+

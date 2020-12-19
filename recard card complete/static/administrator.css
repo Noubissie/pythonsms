@@ -1,0 +1,154 @@
+body{
+    background-color: black;
+    text-align: center;
+    margin: 2px;
+}
+#size_controller{
+    font-size: 100%;
+
+}
+.admin_nav_div1{
+    background-color: rgba(10,10, 10, 0.4);
+}
+
+.admin_navigation{
+    z-index: 1;
+    background-color: rgba(10,10, 10, 1);
+    width: 100%;
+}
+.nav_anchor{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    display: inline-block;
+    width:100%;
+
+}
+.nav_anchor:hover{
+    border: outset;
+    transform: scale3d(1.5,1.5,1.5);
+}
+
+.admin_table1{
+    width: 100%;
+    text-align:center;
+
+}
+.admin_table2{
+    margin-left: auto;
+    margin-right:auto;
+    text-align:center;
+}
+#admin-title_list{
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    border: solid rgba(0,0,0,0.8);
+    font-size: 50%;
+}
+#admin-title_list:hover{
+    transform: scale3d(1.5,1.5,1.5);
+    background-color: white;
+    opacity: 0.5;
+    border-radius: 5%;
+}
+
+.n1{
+    color: green;
+}
+.n2{
+    color: red;
+}
+.n3{
+    color: yellow;
+}
+
+.link-list{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    display: inline-block;
+    width:100%;
+}
+.list-element{
+    width: 100%;
+}
+.link-list:hover{
+    background-color: grey;
+}
+#cl1{
+    float: left;
+}
+#cl2{
+    float: right;
+}
+#school_information,#staff_information,#student_information,#themes,#community{
+
+    color: white;
+
+    background: rgba(50,50,50,1);
+    z-index: 1;
+    display: none;
+}
+
+
+#school-section,#number-of-class{
+    margin:10px;
+}
+
+#backbotton:hover{
+    -webkit-animation-name: backbutton;
+    -moz-animation-name: backbutton;
+    -o-animation-name: backbutton;
+    animation-name: backbutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes backbutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+        -o-transform: translateX(-100px);
+        transform: translateX(-100px);}
+}
+#forwardbotton:hover{
+    -webkit-animation-name: forwabutton;
+    -moz-animation-name: forwabutton;
+    -o-animation-name: forwabutton;
+    animation-name: forwabutton;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+
+    animation-iteration-count: infinite;
+
+
+
+}
+@keyframes forwabutton {
+    from{-webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        transform: translateX(0px);}
+    to{
+        -webkit-transform: translateX(100px);
+        -moz-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        -o-transform: translateX(100px);
+        transform: translateX(100px);}
+}
+
